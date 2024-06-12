@@ -59,7 +59,7 @@ The Handheld Retro Arcade is mostly for Soldering practice as I had to solder al
 
 A Challenging aspect of this project is definately Soldering the many components of the Arcade console since i'm rather inexperienced with soldering so the smaller holes were definately a challenge. I also had difficulties intially as I failed to follow instructions properly and had to restart the project in the beginning. 
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/CaCazFBhYKs](https://youtu.be/HDBI_cemtvI?si=11bn_fcc8gBkOhFm)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HDBI_cemtvI?si=11bn_fcc8gBkOhFm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
