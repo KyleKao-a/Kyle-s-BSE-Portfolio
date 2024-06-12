@@ -53,6 +53,11 @@ For your first milestone, describe what your project is and how you plan to buil
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
 
+# Starter Project: Handheld Retro Arcade
+The Handheld Retro Arcade is mostly for Soldering practice, by soldering the Battery holder, Buttons, Sound, and 2d Display we are able to both power and send signals to the Chip in the frame of the console, which will proccess our inputs and display the output on the display of the console which is how the play will view the game. 
+
+A Challenging aspect of this project is definately Soldering the many components of the Arcade console since i'm rather inexperienced so Soldering the smaller holes were definately a challenge. I also had difficulties intially as I failed to follow instructions properly and had to restart the project. 
+
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
