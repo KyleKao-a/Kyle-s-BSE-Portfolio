@@ -58,6 +58,7 @@ Essentially the arcade works by using either the batteries or the micro USB to p
 
 ![Headstone Image](5pcs-STC8-STC8H3K64-STC8H3K64S2-STC8H3K64S2-45I-LQFP48-1T-8051-Microprocessor-Microcontroller-MCU-IC-Chip.webp)
 **Figure 1. The IC Chip here is the brain/command center of the arcade, all actions you do in your game has to go there here first**
+
 For example, the console can translate you pressing the right button of the arcade into the action of moving the tetris piece to the right. This is by sending a signal onto the IC Chip which translates the signal into an action onto the LED Matrix. This allows the player to see that the tetris piece moves to the right.
 
 A challenging aspect of this project is soldering the many components of the arcade console. Since I am inexperienced with soldering, soldering the smaller holes was hard to do. I also initially failed to follow instructions properly and had to restart the project in the beginning. This made me think that I was now wildly behind and I began panicking. Thankfully I was able to finish the starter project on time, and this project has taught me meaningful soldering skills and to keep my composure even in the face of hardship and difficulty. 
