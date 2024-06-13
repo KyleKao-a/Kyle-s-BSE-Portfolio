@@ -57,7 +57,7 @@ The Handheld Retro Arcade is mostly for soldering practice as I had to solder al
 Essentially the arcade works by using either the batteries or the micro USB to power the IC Chip attached to the main frame. The IC chip acts as the brain of the arcade, containing all the code and logic for the arcade's games. With the chip powered, when the player presses any button on the arcade it sends a signal through small wires on the main frame of the arcade to the chip. When the signal reaches the IC chip, the chip can translate the input of the buttons into output by telling the 2D LED dot matrix which dots to light up. The 2D LED dot matrix is the arcade screen and how the player views the game they are playing.
 
 ![Headstone Image](5pcs-STC8-STC8H3K64-STC8H3K64S2-STC8H3K64S2-45I-LQFP48-1T-8051-Microprocessor-Microcontroller-MCU-IC-Chip.webp)
-**Figure 1. The IC Chip here is the brain/command center of the arcade, all actions you do in your game has to go there here first**
+**Figure 1. The IC Chip here is the brain/command center of the arcade, all actions you do in your game go through here first**
 
 For example, the console can translate you pressing the right button of the arcade into the action of moving the tetris piece to the right. This is by sending a signal onto the IC Chip which translates the signal into an action onto the LED Matrix. This allows the player to see that the tetris piece moves to the right.
 
