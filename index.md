@@ -43,7 +43,11 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # First Milestone
 
-For my first milestone I have a working basic prototype of my posture corrector. How it works I that I have a flex sensor attatched to my back brace that is attatched high up on my back. When the user's back bends, will cause the sensor to be stretched, causing the value of the flex sensor to change. I have the flex sensor attatched to the arduino and am able to return the values of the flex sensor. If the flex sensor exceeds a certain value because of the bending, the user will count as slouching in which the words "slouching" will appear on the serial monitor. Furthermore, I have attached lights onto my back brace that will start flashing if the arduino detects slouching that are also wired on the arduino. 
+For my first milestone I have a working basic prototype of my posture corrector. How it works I that I have a flex sensor attatched to my back brace that is attatched high up on my back. When the user's back bends, will cause the sensor to be stretched, causing the value of the flex sensor to change. I have the flex sensor attatched to the arduino and am able to return the values of the flex sensor. If the flex sensor exceeds a certain value because of the bending, the user will count as slouching in which the words "slouching" will appear on the serial monitor.
+
+![Headstone Image](Flex-Sensor-bending-conditions.webp)Flex-Sensor-bending-conditions.webp
+
+Furthermore, I have attached lights onto my back brace that will start flashing if the arduino detects slouching that are also wired on the arduino. 
 
 A big challenge I faced with my project is firstly, soldering the flex sensor to the wires as I accidently broke the flex sensor and needed a replacement, I also had a lot of trouble programming the lights of the brace since I'm pretty rusty at programming so it took a lot longer to find the right functions to use. 
 
