@@ -53,6 +53,10 @@ Furthermore, I have attached lights onto my back brace that will start flashing 
 
 A big challenge I faced with my project is firstly, soldering the flex sensor to the wires as I accidently broke the flex sensor and needed a replacement, I also had a lot of trouble programming the lights of the brace since I'm pretty rusty at programming so it took a lot longer to find the right functions to use. 
 
+![Headstone Image](Schematic.jpg)
+
+**Current schematic connecting the flex sensor and the LED strip**
+
 My plan now is to attatched the bluetooth module onto the arduino and get the bluetooth to work and start sending messages to the samsung galaxy phone. 
 <!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
