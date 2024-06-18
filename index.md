@@ -1,5 +1,5 @@
 # Posture Corrector
-The goal of the posture corrector is to help the user develop better posture naturally instead of a traditional back brace. This is through a flex sensor which is able to detect slouching, which sends a message from the arduino to your phone notifying you to fix your posture. The device is portable with its own battery to help you achieve proper posture wherever you are!
+The goal of the posture corrector is to help the user develop better posture naturally instead of a traditional back brace. This is through a flex sensor which is able to detect slouching, which sends a message from the arduino to your phone notifying you to fix your posture.
 
 <!---
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -40,9 +40,15 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone -->
 
-<!---
+
 # First Milestone
 
+For my first milestone I have a working basic prototype of my posture corrector. How it works I that I have a flex sensor attatched to my back brace that is attatched high up on my back. When the user's back bends, will cause the sensor to be stretched, causing the value of the flex sensor to change. I have the flex sensor attatched to the arduino and am able to return the values of the flex sensor. If the flex sensor exceeds a certain value because of the bending, the user will count as slouching in which the words "slouching" will appear on the serial monitor. Furthermore, I have attached lights onto my back brace that will start flashing if the arduino detects slouching that are also wired on the arduino. 
+
+A big challenge I faced with my project is firstly, soldering the flex sensor to the wires as I accidently broke the flex sensor and needed a replacement, I also had a lot of trouble programming the lights of the brace since I'm pretty rusty at programming so it took a lot longer to find the right functions to use. 
+
+My plan now is to attatched the bluetooth module onto the arduino and get the bluetooth to work and start sending messages to the samsung galaxy phone. 
+<!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
