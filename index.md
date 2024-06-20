@@ -55,6 +55,10 @@ There is a flex sensor attatched to the arduino's 5 volt power, GND and, A0. Bec
 
 I also have an LED strip connected to the Arduino's 5V, GND, and ~6 digital. When the code detects slouching the LED lights are set off with a specificed value on where to start, where to end, and the color I want the lights to display. Along with added delay, I am able to create a flashing effect with my lights. From this I can have my lights start flashing if the arduino detects slouching.
 
+![Headstone Image](Schematic.jpg)
+
+**Current schematic connecting the flex sensor and the LED strip**
+
 A big challenge I faced with my project is firstly, soldering the flex sensor to the wires as I accidently broke the flex sensor and needed a replacement, I also had a lot of trouble programming the lights of the brace since I'm pretty rusty at programming so it took a lot longer to find the right functions to use. I also had issues in taping the flex sensor and lights onto the back brace as even with stronger tape, it is still very susceptible to falling off. 
 
 For my second milestone, I plan on getting a bluetooth module to work with the arduino along with a basic version of my app using the MIT App Inventor. 
@@ -65,7 +69,7 @@ For my second milestone, I plan on getting a bluetooth module to work with the a
 
 **Current schematic connecting the flex sensor and the LED strip**
 
-My plan now is to attatched the bluetooth module onto the arduino and get the bluetooth to work and start sending messages to the samsung galaxy phone. 
+
 <!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
