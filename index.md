@@ -43,15 +43,23 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # First Milestone
 
-For my first milestone I have a working basic prototype of my posture corrector. How it works I that I have a flex sensor attatched to my back brace that is attatched high up on my back. When the user's back bends, will cause the sensor to be stretched, causing the value of the flex sensor to change. I have the flex sensor attatched to the arduino and am able to return the values of the flex sensor. If the flex sensor exceeds a certain value because of the bending, the user will count as slouching in which the words "slouching" will appear on the serial monitor.
+For my first milestone I have a working basic prototype of my posture corrector. How it works I that I have a flex sensor attatched to my back brace that is attatched high up on my back along with LED lights that will respond to the values returned by my flex sensor.
 
 ![Headstone Image](Flex-Sensor-bending-conditions.webp)
 
-**How a flex sensor works is that there is carbon on a small strip of plastic which acts as a variable resistor. By flexing the strip of plastic, you change the flex sensor's resistance. The more you bend the higher the resistance.**
+**How a flex sensor works is that there is conductive ink on a small strip of plastic which acts as a variable resistor. By flexing the strip of plastic, you change the flex sensor's resistance. The more you bend the higher the resistance.**
 
-Furthermore, I have attached lights onto my back brace that will start flashing if the arduino detects slouching that are also wired on the arduino. 
+When you slouch, your back stretches as you bend forward. The way my device is configured is that when the user's back is in a proper position, the flex sensor will be bent. When the flex sensor is bent the conductive ink particles are farther apart increasing the resistance in the flex sensor. Likewise, when the user slouches the flex sensor is straightened as the back stretche. This will allow the conductive ink partiles to be close together, allowing them to have less resistance.
 
-A big challenge I faced with my project is firstly, soldering the flex sensor to the wires as I accidently broke the flex sensor and needed a replacement, I also had a lot of trouble programming the lights of the brace since I'm pretty rusty at programming so it took a lot longer to find the right functions to use. 
+There is a flex sensor attatched to the arduino's 5 volt power, GND and, A0. Because the flex sensor isn't able to measure voltage, I must connect a pin into A0 then convert the voltage into analog in my code. From there I am able to return the values of the flex sensor with the value increasing as the sensor is straightened and lowering as the flex sensor is bent. I have programmed the Arduino where if the flex sensor exceeds a certain value from the user's back bending, the user will count as slouching in which the words "slouching" will appear on the serial monitor. 
+
+I also have an LED strip connected to the Arduino's 5V, GND, and ~6 digital. When the code detects slouching the LED lights are set off with a specificed value on where to start, where to end, and the color I want the lights to display. Along with added delay, I am able to create a flashing effect with my lights. From this I can have my lights start flashing if the arduino detects slouching.
+
+A big challenge I faced with my project is firstly, soldering the flex sensor to the wires as I accidently broke the flex sensor and needed a replacement, I also had a lot of trouble programming the lights of the brace since I'm pretty rusty at programming so it took a lot longer to find the right functions to use. I also had issues in taping the flex sensor and lights onto the back brace as even with stronger tape, it is still very susceptible to falling off. 
+
+For my second milestone, I plan on getting a bluetooth module to work with the arduino along with a basic version of my app using the MIT App Inventor. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TSYudepJFzY?si=NndYQ7sqB-8C4Hcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![Headstone Image](Schematic.jpg)
 
