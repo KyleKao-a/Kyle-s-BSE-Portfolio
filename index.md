@@ -27,9 +27,24 @@ For your final milestone, explain the outcome of your project. Key details to in
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE-->
 
-<!---
 # Second Milestone
 
+For my second milestone, I have created a Bluetooth connection with my Arduino along with a rudimentary app on my Android, which I created using MIT App Inventor. This app is able to change text on-screen to tell if the user is either slouching or not slouching based on what it receives from my Bluetooth module. 
+
+I spent a large portion of time understanding the basics of how the Bluetooth HC-05 module works and how it's meant to be set up. Oftentimes a Bluetooth Module’s data in and data out pins are labeled transmitter and receiver. The transmitter’s job is to transmit data serially from the module to the arduino, and the receiver’s job is to receive data from the Bluetooth communication. Serial communication is the process of sending data one bit at a time, so I coded my Arduino to send one byte to the Bluetooth module, this data would then be transmitted from the module to my Android phone. 
+
+Originally my plan was to connect the RX and TX pins of my Bluetooth to the 0 and 1 data pins on the Arduino respectively to send data. However I found quickly that this wouldn’t work. By connecting the Bluetooth’s pins to the 0 and 1 data pins of the Arduino, while it would send the bytes from the Bluetooth module, it would also send all the other data from my Arduino’s Serial Monitor, which I couldn’t use.
+
+I was able to specifically send out the individual Bytes by creating an object using the Software Serial class from the SoftwareSerial library, where I could then specify what data pins I could connect to my Bluetooth pins to without sending data from my Serial Monitor as well. By using the .write method, I was able to print my data to the TX pin, then use the .flush method to clear the queue of bytes. 
+
+Now that my Arduino was able to send data to my phone, I needed to create an app to read the data and display if the user was slouching or not. For this I used MIT App Inventor. The MIT app inventor uses block-style coding which I was very unfamiliar with, so it took me a very long time to understand what I was doing. I was able to establish a Bluetooth connection with the module by creating a list picker element which, when clicked, would show the address and names of available connections.
+
+When the Bluetooth Module is connected I had to create a system that could read the data it received. For this I used the clock component that would trigger every one-tenth of a second. From there I used a block labeled “call BluetoothClient1.ReceiveUnsigned1ByteNumber”. This block is able to read the bytes sent from my module. Because the bytes I sent were all positive numbers I would receive an unsigned byte which is always positive. With the bytes sent by my Bluetooth, I constructed a basic if state that would determine if the user is slouching based on what number it received. If the app received ‘0’ the user was not slouching if the app received ‘1’ the user is slouching. 
+
+I encountered multiple issues when connecting my Bluetooth module both from the module being difficult to work with, along with me not quite understanding how the Bluetooth worked. I would blindly follow guides I found online instead of trying to understand what the methods in the Software Serial library or the blocks in the MIT App inventor did. Eventually by patiently sitting down and learning what they did, I was able to make my app work. 
+For my third milestone, I plan on finalizing a lot of my project. This includes soldering my wires, permanently attaching my flex sensor onto my back brace, and adding a notification system onto my app with my new understanding of what the blocks do. 
+
+<!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
