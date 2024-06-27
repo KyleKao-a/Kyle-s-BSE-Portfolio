@@ -41,7 +41,7 @@ Now that my Arduino was able to send data to my phone, I needed to create an app
 
 When the Bluetooth Module is connected I had to create a system that could read the data it received. For this I used the clock component that would trigger every one-tenth of a second. From there I used a block labeled “call BluetoothClient1.ReceiveUnsigned1ByteNumber”. This block is able to read the bytes sent from my module. Because the bytes I sent were all positive numbers I would receive an unsigned byte which is always positive. With the bytes sent by my Bluetooth, I constructed a basic if state that would determine if the user is slouching based on what number it received. If the app received ‘0’ the user was not slouching if the app received ‘1’ the user is slouching. 
 
-![Headstone Image](MIT Milestone 2 code.jpg)
+![Headstone Image](MIT_Milestone_2_code.jpg)
 
 **On my MIT app inventor, the blocks here are for connecting Bluetooth and for changing the text if the user is slouching or not slouching. Listpicker1 acts as the Bluetooth picker with "setListPicker1.Elements" giving us a list of availble connections. When the Bluetooth is connected the app runs and if-if else statement in which it reads the unsigned byte recieved by the Bluetooth. Based on the number received, the text on ListPicker 2 either changes to slouching or not slouching**
 
