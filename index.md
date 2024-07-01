@@ -72,7 +72,8 @@ For my first milestone, I have a working basic prototype of my posture corrector
 
 ![Headstone Image](Flex-Sensor-bending-conditions.webp)
 
-**Figure 3. A flex sensor works by having conductive ink on a small strip of plastic which acts as a variable resistor. By flexing the strip of plastic, you change the flex sensor's resistance. The more you bend the higher the resistance.**
+**Figure 3. A flex sensor works by having conductive ink on a small strip of plastic which acts as a variable resistor. By flexing the strip of plastic, you change the flex sensor's resistance. The more you bend the higher the resistance.
+Image from https://microcontrollerslab.com/flex-sensor-arduino-tutorial/**
 
 When you slouch, your back stretches as you bend forward. The way my device is configured is that when the user's back is in a proper position, the flex sensor will be bent. When the flex sensor is bent the conductive ink particles are farther apart increasing the resistance in the flex sensor. Likewise, when the user reclines the flex sensor is straightened as the back stretches. This will allow the conductive ink particles to be close together, allowing them to have less resistance.
 
