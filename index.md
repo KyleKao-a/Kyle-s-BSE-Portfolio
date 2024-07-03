@@ -134,11 +134,70 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 <!---
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. --->
-<!---
+# Code
 ```
-CODE GOES HERE
+#include <Adafruit_NeoPixel.h>//Allows us to light up LED
+#include <SoftwareSerial.h>
+
+int flexpin = A0;
+int value;
+#define LED_PIN    6 //pin#
+#define LED_COUNT 60 //#ofLED
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+SoftwareSerial B(10,11);//orange is least yellow is most
+char Incoming_value = 0;
+
+void setup() {
+  strip.begin();
+  B.begin(9600);
+  Serial.begin(9600);
+  pinMode(13,OUTPUT);
+}
+
+void loop() {
+
+  if(Serial.available() > 0)
+  {
+    Incoming_value = Serial.read();
+    Serial.print(Incoming_value);
+    Serial.print("\n");
+    if (Incoming_value == '1')
+      digitalWrite(13,HIGH);
+    else if(Incoming_value == '0')
+      digitalWrite(13,LOW);
+  }
+  
+  byte send = 1;
+  int flexVal;
+  flexVal = analogRead(flexpin);//Converts the Voltage into a value that is displayed on Serial Monitor
+  Serial.print("Sensor: ");
+  Serial.println(flexVal);
+  if (flexVal >= 16){
+    strip.fill(111111110000000000000000,0, 100);
+    Serial.println("Slouching");
+    send = 1;
+    B.write(send);
+    B.flush();
+    strip.show();
+    delay(500);
+    strip.fill(	0,0, 100);
+    strip.show();
+  }
+  else
+  {
+    strip.fill(	0,0, 100);
+    strip.show();
+    send = 0;
+    B.write(send);
+    B.flush();
+  }
+   
+  
+  delay(500);
+}
+
 ```
--->
+
 <!---
 # Bill of Materials
 
@@ -151,6 +210,15 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 --->
+
+# Bill of Materials
+
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Arduino Uno | What the item is used for | $28.50 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Back Brace | Used as a template for the Flex sensor to be attatched to | $33.99 | <a href="https://www.amazon.com/TK-Care-Pro-Posture-Corrector/dp/B0BCQLYKKP"> Link </a> |
+| DSD HC-05 Bluetooth Module | What the item is used for | $10.99 | <a href= "https://www.amazon.com/DSD-TECH-Bluetooth-iBeacon-Arduino/dp/B06WGZB2N4/ref=pd_lpo_sccl_3/138-5518948-2965568?pd_rd_w=SxQiZ&content-id=amzn1.sym.4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_p=4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_r=YRRKMNCJNHFM7TKKD3NQ&pd_rd_wg=ML5nv&pd_rd_r=007ef4bf-bd2e-4d68-bde2-24e1751eee4f&pd_rd_i=B06WGZB2N4&psc=1"> Link </a> |
+
 <!---
 # Other Resources/Examples
 
@@ -165,4 +233,5 @@ One of the best parts about Github is that you can view how other people set up 
 - [Set up Bluetooth Module](https://www.youtube.com/watch?si=HPFs6htX0e5Mx7zb&v=aQcJ4uHdQEA&feature=youtu.be)
 - [To send Bytes through Arduino using Bluetooth Module](https://forum.arduino.cc/t/sending-and-receiving-bytes-through-bluetooth/925524/3)
 - [Notification Setup for MIT app inventor](https://community.appinventor.mit.edu/t/free-notification-style-extension-with-various-types-of-notification/12115)
+
 To watch the BSE tutorial on how to create a portfolio, click here.
