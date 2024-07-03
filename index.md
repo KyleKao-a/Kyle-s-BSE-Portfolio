@@ -160,7 +160,7 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 --->
 # Other Resources/Examples
-- [AnalogRead of Flexsensor:]([url](https://www.youtube.com/watch?v=8BNp6niBp-A)) 
+- [AnalogRead of Flexsensor](https://www.youtube.com/watch?v=8BNp6niBp-A)) 
 - [Install LED strip onto Arduino:]([url](https://www.learnelectronicsindia.com/post/interfacing-neopixel-strip-with-arduino-tinkercad)) 
 - Set up Bluetooth Module: https://www.youtube.com/watch?si=HPFs6htX0e5Mx7zb&v=aQcJ4uHdQEA&feature=youtu.be
 - To send Bytes through Arduino using Bluetooth Module: https://forum.arduino.cc/t/sending-and-receiving-bytes-through-bluetooth/925524/3
