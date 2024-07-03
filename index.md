@@ -218,6 +218,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Arduino Uno | What the item is used for | $28.50 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Back Brace | Used as a template for the Flex sensor to be attatched to | $33.99 | <a href="https://www.amazon.com/TK-Care-Pro-Posture-Corrector/dp/B0BCQLYKKP"> Link </a> |
 | DSD HC-05 Bluetooth Module | What the item is used for | $10.99 | <a href= "https://www.amazon.com/DSD-TECH-Bluetooth-iBeacon-Arduino/dp/B06WGZB2N4/ref=pd_lpo_sccl_3/138-5518948-2965568?pd_rd_w=SxQiZ&content-id=amzn1.sym.4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_p=4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_r=YRRKMNCJNHFM7TKKD3NQ&pd_rd_wg=ML5nv&pd_rd_r=007ef4bf-bd2e-4d68-bde2-24e1751eee4f&pd_rd_i=B06WGZB2N4&psc=1"> Link </a> |
+| Flex Sensor | Returns resistance when bent | $17.95 | <a href= "https://www.sparkfun.com/products/8606"> Link </a> |
+| Android | Contains the app and sends notifications | $183.99 | <a href= "https://www.amazon.com/dp/B09MZBTMQQ/ref=twister_B0BTCN5QXV?_encoding=UTF8&th=1"> Link </a> |
+
 
 <!---
 # Other Resources/Examples
