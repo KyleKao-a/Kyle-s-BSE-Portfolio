@@ -236,5 +236,6 @@ One of the best parts about Github is that you can view how other people set up 
 - [Set up Bluetooth Module](https://www.youtube.com/watch?si=HPFs6htX0e5Mx7zb&v=aQcJ4uHdQEA&feature=youtu.be)
 - [To send Bytes through Arduino using Bluetooth Module](https://forum.arduino.cc/t/sending-and-receiving-bytes-through-bluetooth/925524/3)
 - [Notification Setup for MIT app inventor](https://community.appinventor.mit.edu/t/free-notification-style-extension-with-various-types-of-notification/12115)
-
+<!---
 To watch the BSE tutorial on how to create a portfolio, click here.
+--->
