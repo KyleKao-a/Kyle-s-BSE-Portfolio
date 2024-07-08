@@ -37,6 +37,8 @@ I think my greatest triumph was when I was able to connect my Bluetooth Module t
 I believe I learned a lot about both software and hardware during my time and Bluestamp. I learned techniques on soldering, what a voltage divider was, and how to properly wire Arduino.My time at Bluestamp has opened my eyes to the possible paths 
  I could take in STEM and has sparked my interest in fields like computer and electrical engineering. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NXD6nar5XYE?si=a_GLr6sXmp0tv7Gj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
