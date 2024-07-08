@@ -224,6 +224,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Breadboard | Used for connectings to various devices | $5.99 | <a href= "https://www.amazon.com/Qunqi-point-Experiment-Breadboard-5-5%C3%978-2%C3%970-85cm/dp/B0135IQ0ZC/ref=sr_1_10?crid=2NREO3D61OYUY&keywords=breadboard&qid=1687992200&sprefix=breadboar%2Caps%2C210&sr=8-10"> Link </a> |
 | Male/Male Jumper Wires | Used to Connect devices | $1.95 | <a href= "https://www.adafruit.com/product/1957"> Link </a> |
 | Solid core wire | Used to Connect devices | $2.95 | <a href= "https://www.adafruit.com/product/2984"> Link </a> |
+| 330 Ohm Resistor | Used in Voltage Divider to allow Arduino to read flex sensor values | $6.73 | <a href= "https://www.amazon.com/Projects-100EP512330R-330-Resistors-Pack/dp/B0185FID32/ref=sr_1_7?dib=eyJ2IjoiMSJ9.-yUS-QRUOwfQEjnz7IZ1kkAYHlfhi9BKLM3wuXkTiGkiFh825GyyeVPgAj4VtrHTagHZ69PCyZ4l-PKhgVaCmmU61s0_xMHiZlJ7FNYaSenDNjS556yo1gw5-cikanIZFajBn5oEVKbu4V7bpxfh8CLBU8s6MdC6gAfhkjssRhTTWwsh60QklvGCNeJfvM7y9LF-hDDuLrI8Kd0gArPFwsAJv_9bzFBOR4z-iRLBUVQ.TvtVXdbVv9umjFE7pvCkRfvqFJs8uivG1q4i10XmW-A&dib_tag=se&keywords=330+ohm+resistor&qid=1720471361&sr=8-7"> Link </a> |
 
 <!---
 # Other Resources/Examples
