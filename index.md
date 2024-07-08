@@ -215,7 +215,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Arduino Uno | What the item is used for | $28.50 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino Uno | Open-source electronic device for building interactive devices | $28.50 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Back Brace | Used as a template for the Flex sensor to be attatched to | $33.99 | <a href="https://www.amazon.com/TK-Care-Pro-Posture-Corrector/dp/B0BCQLYKKP"> Link </a> |
 | DSD HC-05 Bluetooth Module | What the item is used for | $10.99 | <a href= "https://www.amazon.com/DSD-TECH-Bluetooth-iBeacon-Arduino/dp/B06WGZB2N4/ref=pd_lpo_sccl_3/138-5518948-2965568?pd_rd_w=SxQiZ&content-id=amzn1.sym.4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_p=4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_r=YRRKMNCJNHFM7TKKD3NQ&pd_rd_wg=ML5nv&pd_rd_r=007ef4bf-bd2e-4d68-bde2-24e1751eee4f&pd_rd_i=B06WGZB2N4&psc=1"> Link </a> |
 | Flex Sensor | Returns resistance when bent | $17.95 | <a href= "https://www.sparkfun.com/products/8606"> Link </a> |
@@ -223,7 +223,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | LED Strip | To notify the user if they have poor posture | $19.99 | <a href= "https://www.amazon.com/LOAMLIN-WS2812B-Individually-Addressable-Waterproof/dp/B0956C7KFR/ref=sr_1_3_sspa?crid=2URKCX03WFN9Y&dib=eyJ2IjoiMSJ9.d8EXEv60wUt4xidpOjr_lEPKvRrOJ1JoRJCjfWr5fk1709lC8tG8fp1zjqItDM7EjbG0kFwVQUFJxnS9sS1YwB6qeECSK_h3v5B-JLTls0VMPYQ5naB9_uMnGgDaTE4ec5xBnCPp3xGinkNf3_cDtyndABzaBmhqu_olLZK9XYZoSGuIg-2bDVSs-IiY0SsJpo17PXKgkHaczi5TH4FVRK-jSd4YoOv4yJFMZP9OGpweZDRYujuTU7VLsxaiGzuQdM02EsIoIp07yH6P0GlyaLD6AHoF9FBX_yy6vA2ts-8.oanplGUwiTHp3nyNpj-JY1XLU2NJrYbME2rrAf8Hc5Q&dib_tag=se&keywords=adafruit%2Bled%2Bstrip&qid=1720468390&s=electronics&sprefix=adafruit%2Bled%2Bstrip%2Celectronics%2C148&sr=1-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
 | Breadboard | Used for connectings to various devices | $5.99 | <a href= "https://www.amazon.com/Qunqi-point-Experiment-Breadboard-5-5%C3%978-2%C3%970-85cm/dp/B0135IQ0ZC/ref=sr_1_10?crid=2NREO3D61OYUY&keywords=breadboard&qid=1687992200&sprefix=breadboar%2Caps%2C210&sr=8-10"> Link </a> |
 | Male/Male Jumper Wires | Used to Connect devices | $1.95 | <a href= "https://www.adafruit.com/product/1957"> Link </a> |
-
+| Solid core wire | Used to Connect devices | $2.95 | <a href= "https://www.adafruit.com/product/2984"> Link </a> |
 
 <!---
 # Other Resources/Examples
@@ -239,6 +239,7 @@ One of the best parts about Github is that you can view how other people set up 
 - [Set up Bluetooth Module](https://www.youtube.com/watch?si=HPFs6htX0e5Mx7zb&v=aQcJ4uHdQEA&feature=youtu.be)
 - [To send Bytes through Arduino using Bluetooth Module](https://forum.arduino.cc/t/sending-and-receiving-bytes-through-bluetooth/925524/3)
 - [Notification Setup for MIT app inventor](https://community.appinventor.mit.edu/t/free-notification-style-extension-with-various-types-of-notification/12115)
+- [How to do a Running Stitch](https://penguinandfish.com/blogs/embroidery-stitches/how-to-do-a-running-stitch)
 <!---
 To watch the BSE tutorial on how to create a portfolio, click here.
 --->
