@@ -40,6 +40,55 @@ A challenge I initially faced was stitching the tilt sensor was more difficult t
 For my second Modification I have made my posture corrector portable with the use of a power bank. Along with sewing my arduino and my LED lights to my posture corrector. 
 This allows my posture corrector to be used essentially everywhere as I no longer need to have my arduino connected to my laptop for power. In order to sew the arduino and LED lights to my brace, I had to make multiple loops with my string in order to properly secure them in place. Sewing my arduino, power bank, and LED lights into my back brace make it much easier to carry around than before. Originally I had to carry the arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
 
+```
+#include <Adafruit_NeoPixel.h>
+#include <SoftwareSerial.h>
+
+int flexpin = A1;
+int value;
+#define LED_PIN    6 //pin#
+#define LED_COUNT 60 //#ofLED
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);//creating object from a class 
+SoftwareSerial B(0,11);//orange is least yellow is most // creating object from a class
+char Incoming_value = 0;
+
+void setup() {
+  strip.begin();
+  B.begin(9600);
+  Serial.begin(9600);
+  pinMode(2,INPUT);//set pin2 as INPUT
+  digitalWrite(2, HIGH);//set pin2 as HIGH
+}
+
+byte send = 1;
+int flexVal = analogRead(flexpin);//Converts the Voltage into a value that is displayed on Serial Monitor
+int basevalue;
+bool startup = false;
+void loop() {
+  int digitalVal = digitalRead(2);
+  if (HIGH == digitalVal){
+    strip.fill(	0,0, 100);
+    strip.show();
+    send = 0;
+    B.write(send);
+    B.flush();
+  }
+  else
+  {
+    strip.fill(111111110000000000000000,0, 100);//Binary for red
+    Serial.println("Slouching");
+    send = 1;
+    B.write(send);
+    B.flush();
+    strip.show();
+    delay(500);
+    strip.fill(	0,0, 100);
+    strip.show();
+  } 
+  delay(500);
+}
+```
+
 A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off requiring a replacement. 
 
 # Final Milestone
