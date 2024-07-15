@@ -88,7 +88,7 @@ void loop() {
   delay(500);
 }
 ```
-
+**Updated Arduino code for the tilt sensor**
 A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off requiring a replacement. 
 
 # Final Milestone
