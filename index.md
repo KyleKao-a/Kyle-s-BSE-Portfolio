@@ -14,7 +14,7 @@ You should comment out all portions of your portfolio that you have not complete
 -->
 ![Headstone Image](Kyle_K.jpg)
 
-# Modifications
+# Modifications Part 1
 For my first set of modifications I have done 2 changes to my project. First I soldered my wires onto an Arduino using a protoshield.
 
 <ins>Why add these Modifications?</ins>
@@ -34,6 +34,13 @@ My solution was to use a tilt sensor which solved many of the flex sensor’s sh
 **As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.**
 
 A challenge I initially faced was stitching the tilt sensor was more difficult than I initially expected as it has some protruding parts that I had to create holes in my fabric to accommodate. Soldering my wires into the protoshield was also rather difficult as soldering is semi-permanent so I always had to double/triple check to see if I was soldering the right wires, which was very stressful for me. 
+
+# Modifications Part 2
+
+For my second Modification I have made my posture corrector portable with the use of a power bank. Along with sewing my arduino and my LED lights to my posture corrector. 
+This allows my posture corrector to be used essentially everywhere as I no longer need to have my arduino connected to my laptop for power. In order to sew the arduino and LED lights to my brace, I had to make multiple loops with my string in order to properly secure them in place. Sewing my arduino, power bank, and LED lights into my back brace make it much easier to carry around than before. Originally I had to carry the arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
+
+A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off requiring a replacement. 
 
 # Final Milestone
 
