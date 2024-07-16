@@ -44,6 +44,8 @@ This allows my posture corrector to be used essentially everywhere as I no longe
 
 A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off requiring a replacement. However my previous experience in sewing made this attempt look much more appealing as I learned to better space my running stitches and better tie off my string once I'm done sewing. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c_0KX9H5bLY?si=OWW0cfxlXA8gGvAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # Final Milestone
 
 For my third milestone, I added a notification extension to my MIT app that will notify the user of their poor posture as long as the Bluetooth module is connected to their device. 
