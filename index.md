@@ -32,7 +32,8 @@ My solution was to use a tilt sensor which solved many of the flex sensor’s sh
 
 ![Headstone Image](Tilt_sensor.JPG)
 
-**As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.**
+**As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.
+Credits: https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutorial/**
 
 A challenge I initially faced was stitching the tilt sensor was more difficult than I initially expected as it has some protruding parts that I had to create holes in my fabric to accommodate. Soldering my wires into the protoshield was also rather difficult as soldering is semi-permanent so I always had to double/triple check to see if I was soldering the right wires, which was very stressful for me. 
 
