@@ -42,56 +42,6 @@ A challenge I initially faced was stitching the tilt sensor was more difficult t
 For my second Modification I have made my posture corrector portable with the use of a power bank. Along with sewing my arduino and my LED lights to my posture corrector. 
 This allows my posture corrector to be used essentially everywhere as I no longer need to have my arduino connected to my laptop for power. In order to sew the arduino and LED lights to my brace, I had to make multiple loops with my string in order to properly secure them in place. Sewing my arduino, power bank, and LED lights into my back brace makes my project much more organized and easier to transport. Originally I had to carry the arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
 
-```
-#include <Adafruit_NeoPixel.h>
-#include <SoftwareSerial.h>
-
-int flexpin = A1;
-int value;
-#define LED_PIN    6 //pin#
-#define LED_COUNT 60 //#ofLED
-Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);//creating object from a class 
-SoftwareSerial B(0,11);//orange is least yellow is most // creating object from a class
-char Incoming_value = 0;
-
-void setup() {
-  strip.begin();
-  B.begin(9600);
-  Serial.begin(9600);
-  pinMode(2,INPUT);//set pin2 as INPUT
-  digitalWrite(2, HIGH);//set pin2 as HIGH
-}
-
-byte send = 1;
-int flexVal = analogRead(flexpin);//Converts the Voltage into a value that is displayed on Serial Monitor
-int basevalue;
-bool startup = false;
-void loop() {
-  int digitalVal = digitalRead(2);
-  if (HIGH == digitalVal){
-    strip.fill(	0,0, 100);
-    strip.show();
-    send = 0;
-    B.write(send);
-    B.flush();
-  }
-  else
-  {
-    strip.fill(111111110000000000000000,0, 100);//Binary for red
-    Serial.println("Slouching");
-    send = 1;
-    B.write(send);
-    B.flush();
-    strip.show();
-    delay(500);
-    strip.fill(	0,0, 100);
-    strip.show();
-  } 
-  delay(500);
-}
-```
-**Updated Arduino code for the tilt sensor**
-
 A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off requiring a replacement. However my previous experience in sewing made this attempt look much more appealing as I learned to better space my running stitches and better tie off my string once I'm done sewing. 
 
 # Final Milestone
@@ -240,17 +190,17 @@ Here's where you'll put your code. The syntax below places it into a block of co
 # Code
 ```
 #include <Adafruit_NeoPixel.h>//Allows us to light up LED
-#include <SoftwareSerial.h>
+#include <SoftwareSerial.h>//Allows us to send data from the Bluetooth Module without using the Arduino's TX & RX pins
 
-int flexpin = A0;
+int flexpin = A0;//Where the Arduino receives flex sensor analog data
 int value;
 #define LED_PIN    6 //pin#
-#define LED_COUNT 60 //#ofLED
-Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
-SoftwareSerial B(10,11);//orange is least yellow is most
+#define LED_COUNT 60 //# ofLEDs
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);// Use constructor to make a new object from NeoPixel lirary
+SoftwareSerial B(10,11);//You define the data pins in your parameters & Create an object from Software Serial 
 char Incoming_value = 0;
 
-void setup() {
+void setup() {//begin the created objects along with the serial monitor 
   strip.begin();
   B.begin(9600);
   Serial.begin(9600);
@@ -275,28 +225,28 @@ void loop() {
   flexVal = analogRead(flexpin);//Converts the Voltage into a value that is displayed on Serial Monitor
   Serial.print("Sensor: ");
   Serial.println(flexVal);
-  if (flexVal >= 16){
-    strip.fill(111111110000000000000000,0, 100);
-    Serial.println("Slouching");
+  if (flexVal >= 16){//If the value exceeds a value collected by the A0 pin, the brace counts as slouching
+    strip.fill(111111110000000000000000,0, 100);//Turns lights on
+    Serial.println("Slouching");//prints out result in serial monitor 
     send = 1;
-    B.write(send);
-    B.flush();
-    strip.show();
+    B.write(send);//sends byte from Bluetooth module to Ardroid phone 
+    B.flush();//clears input buffer
+    strip.show();//Lights shine
     delay(500);
-    strip.fill(	0,0, 100);
-    strip.show();
+    strip.fill(	0,0, 100);//Sets lights to nothing
+    strip.show();//Turns off the light
   }
   else
   {
     strip.fill(	0,0, 100);
-    strip.show();
+    strip.show();//Turns off the light
     send = 0;
     B.write(send);
     B.flush();
   }
    
   
-  delay(500);
+  delay(500);//repeat loop every half a second 
 }
 
 ```
