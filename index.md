@@ -38,7 +38,7 @@ A challenge I initially faced was stitching the tilt sensor was more difficult t
 # Modifications Part 2
 
 For my second Modification I have made my posture corrector portable with the use of a power bank. Along with sewing my arduino and my LED lights to my posture corrector. 
-This allows my posture corrector to be used essentially everywhere as I no longer need to have my arduino connected to my laptop for power. In order to sew the arduino and LED lights to my brace, I had to make multiple loops with my string in order to properly secure them in place. Sewing my arduino, power bank, and LED lights into my back brace make it much easier to carry around than before. Originally I had to carry the arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
+This allows my posture corrector to be used essentially everywhere as I no longer need to have my arduino connected to my laptop for power. In order to sew the arduino and LED lights to my brace, I had to make multiple loops with my string in order to properly secure them in place. Sewing my arduino, power bank, and LED lights into my back brace makes my project much more organized and easier to transport. Originally I had to carry the arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
 
 ```
 #include <Adafruit_NeoPixel.h>
@@ -90,7 +90,7 @@ void loop() {
 ```
 **Updated Arduino code for the tilt sensor**
 
-A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off requiring a replacement. 
+A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off requiring a replacement. However my previous experience in sewing made this attempt look much more appealing as I learned to better space my running stitches and better tie off my string once I'm done sewing. 
 
 # Final Milestone
 
