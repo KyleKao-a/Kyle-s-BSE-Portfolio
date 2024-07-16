@@ -286,14 +286,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Tilt Sensor | Alternative for seeing if the user has proper posture. | $9.59 | <a href="https://www.amazon.com/uxcell-Sensor-Module-SW-520D-Arduino/dp/B07S1WN977"> Link </a> |
 | Arduino Uno protoshield | Allows for a semi-permenant wiring for your Arduino | $5.49 | <a href="https://www.amazon.com/DAOKI-Prototyping-Breadboard-ATMEGA328P-ProtoShield/dp/B07XGZTMY9/ref=sr_1_4?crid=31JFD6XBHVA39&dib=eyJ2IjoiMSJ9.Tnz1H6wnpv0y71wp8rhhkLvdTUasalSWnxT6f7Pk8_vnsHgUuC1L0ob0vmjKmS4WzCdu7VZ7qTQPH1VCXFoqobcAFcWu-zKCMY6y9udj2YVWl9b8wdE1doW--qpzWEdtenIoeZp_zqLmZzVhJWdpZiQl5Qn3k7jy-1T55Y2-EL2pBqrmtVW5at23ArBr2CHSeOKo7-6Iq5ot7Hb82TNqN-1nVVYY3_nLOFKpWeNxVEevAIZnNAJVW7cuoxFou3gaeBode-_f4uy-5e8wbV7aNe8To-9eXsZehdo_r7Fxllw.QhUd4OyRV3NNoCkLb8lpehl2NeaomHoQSZKirM6U9W4&dib_tag=se&keywords=Arduino+Uno+protoshield&qid=1721159753&s=industrial&sprefix=arduino+uno+protoshiel%2Cindustrial%2C145&sr=1-4"> Link </a> |
 | Power Bank | Powers the Arduino (cheaper alternative available) | $69.99 | <a href="https://www.amazon.com/Belkin-BOOSTCHARGE-Integrated-Integrated-Additional/dp/B08VH86B3G/ref=sr_1_2?dib=eyJ2IjoiMSJ9.j4XQl0n5MxWVWHfu1-PK99Rt3K4KhHe-oArxhnke03nmaDGtWSvERmrOPGNY5dwHmkdKUAZ9YiB8HkSSYKDutiajPy-yYhUUmG5op1w7Py-cMGidhU2r4-hB_xzcRjT-N10pz6goEueaRcTFsblYRkvt3_YD9BeudOTcX0-4t6lH_B9t_SBavslzWEJtlGDKvpB4osmi39YYyrhu6J_rhtT61VbM6AtgujGs-OI-tuo.SJKwxFQbperbn3YE7HIjbcOOJ7q6sgnG3HK5CbeUxqg&dib_tag=se&hvadid=642480020396&hvdev=c&hvlocphy=9032183&hvnetw=g&hvqmt=e&hvrand=10664272944528762051&hvtargid=kwd-1437992897244&hydadcr=954_1014973519&keywords=belkin+boost+charge+plus+10k&qid=1721160767&sr=8-2"> Link </a> |
-<!---
-# Other Resources/Examples
 
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
---->
 # Other Resources/Examples
 - [AnalogRead of Flexsensor](https://www.youtube.com/watch?v=8BNp6niBp-A) 
 - [Install LED strip onto Arduino](https://www.learnelectronicsindia.com/post/interfacing-neopixel-strip-with-arduino-tinkercad)
