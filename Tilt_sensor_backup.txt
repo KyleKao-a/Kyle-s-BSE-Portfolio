@@ -1,0 +1,46 @@
+#include <Adafruit_NeoPixel.h>
+#include <SoftwareSerial.h>
+
+int flexpin = A1;
+int value;
+#define LED_PIN    6 //pin#
+#define LED_COUNT 60 //#ofLED
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);//creating object from a class 
+SoftwareSerial B(0,11);//orange is least yellow is most // creating object from a class
+char Incoming_value = 0;
+
+void setup() {
+  strip.begin();
+  B.begin(9600);
+  Serial.begin(9600);
+  pinMode(2,INPUT);//set pin2 as INPUT
+  digitalWrite(2, HIGH);//set pin2 as HIGH
+}
+
+byte send = 1;
+int flexVal = analogRead(flexpin);//Converts the Voltage into a value that is displayed on Serial Monitor
+int basevalue;
+bool startup = false;
+void loop() {
+  int digitalVal = digitalRead(2);
+  if (HIGH == digitalVal){
+    strip.fill(	0,0, 100);
+    strip.show();
+    send = 0;
+    B.write(send);
+    B.flush();
+  }
+  else
+  {
+    strip.fill(111111110000000000000000,0, 100);//Binary for red
+    Serial.println("Slouching");
+    send = 1;
+    B.write(send);
+    B.flush();
+    strip.show();
+    delay(500);
+    strip.fill(	0,0, 100);
+    strip.show();
+  } 
+  delay(500);
+}
