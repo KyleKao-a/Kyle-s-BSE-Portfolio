@@ -279,6 +279,13 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Solid core wire | Used to Connect devices | $2.95 | <a href= "https://www.adafruit.com/product/2984"> Link </a> |
 | 330 Ohm Resistor | Used in Voltage Divider to allow Arduino to read flex sensor values | $6.73 | <a href= "https://www.amazon.com/Projects-100EP512330R-330-Resistors-Pack/dp/B0185FID32/ref=sr_1_7?dib=eyJ2IjoiMSJ9.-yUS-QRUOwfQEjnz7IZ1kkAYHlfhi9BKLM3wuXkTiGkiFh825GyyeVPgAj4VtrHTagHZ69PCyZ4l-PKhgVaCmmU61s0_xMHiZlJ7FNYaSenDNjS556yo1gw5-cikanIZFajBn5oEVKbu4V7bpxfh8CLBU8s6MdC6gAfhkjssRhTTWwsh60QklvGCNeJfvM7y9LF-hDDuLrI8Kd0gArPFwsAJv_9bzFBOR4z-iRLBUVQ.TvtVXdbVv9umjFE7pvCkRfvqFJs8uivG1q4i10XmW-A&dib_tag=se&keywords=330+ohm+resistor&qid=1720471361&sr=8-7"> Link </a> |
 
+**Items bought for Modifications**
+
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 <!---
 # Other Resources/Examples
 
