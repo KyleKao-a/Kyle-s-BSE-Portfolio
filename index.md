@@ -1,3 +1,4 @@
+theme: jekyll-theme-minima 
 # Posture Corrector
 Tired of your parents nagging you to fix your posture? Now you can have a machine to do that for you! The goal of the posture corrector is to help the user develop better posture naturally instead of a traditional back brace. This is through a flex sensor which is able to detect slouching, which sends a message from the arduino to your phone notifying you to fix your posture.
 
