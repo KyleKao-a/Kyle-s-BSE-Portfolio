@@ -153,7 +153,7 @@ When you slouch, your back stretches as you bend forward. The way my device is c
 <!--
 ![Headstone Image](circuit.jpg)
 --->
-<p align="center"><img src="Flex-Sensor-bending-conditions.webp" width="450" height="225">
+<p align="center"><img src="circuit.jpg" width="450" height="225">
 
 **Figure 8. This diagram is the circuit schematic of the flex sensor the Analog reader reads the voltage in-between the flex sensor and the 330 Ohm resistor.**
 
