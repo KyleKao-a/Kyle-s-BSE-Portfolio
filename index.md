@@ -102,9 +102,11 @@ I spent a large portion of time understanding the basics of how the Bluetooth HC
 Originally my plan was to connect the RX and TX pins of my Bluetooth to the 0 and 1 data pins on the Arduino respectively to send data. However I found quickly that this wouldn’t work. By connecting the Bluetooth’s pins to the 0 and 1 data pins of the Arduino, while it would send the bytes from the Bluetooth module, it would also send all the other data from my Arduino’s Serial Monitor, which I couldn’t use.
 
 I was able to specifically send out the individual Bytes by creating an object using the Software Serial class from the SoftwareSerial library, where I could then specify what data pins I could connect to my Bluetooth pins to without sending data from my Serial Monitor as well. By using the .write method, I was able to print my data to the TX pin, then use the .flush method to clear the queue of bytes. 
-
+<!---
 ![Headstone Image](Bluetooth_Diagram.jpg)
-
+--->
+<p align="center"><img src="sewing.JPG" width="550" height="425">
+ 
 **Figure 5. On my Arduino with an object created with the Software Serial class the .write method prints data to the TX pin of the Bluetooth Module, which travels through the wires from my pin 11 onto my Bluetooth module which is transmitted to my Android.**
 
 Now that my Arduino was able to send data to my phone, I needed to create an app to read the data and display if the user was slouching or not. For this I used MIT App Inventor. The MIT app inventor uses block-style coding which I was very unfamiliar with, so it took me a very long time to understand what I was doing. I was able to establish a Bluetooth connection with the module by creating a list picker element which, when clicked, would show the address and names of available connections.
