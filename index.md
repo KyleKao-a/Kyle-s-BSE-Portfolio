@@ -55,9 +55,8 @@ The MIT app inventor allows for extensions similar to libraries that we download
 I spent much of my time understanding how my Notification extension worked. Because I spent a lot of time working on the MIT App inventor, I was able to quickly download and find the extension’s documentation. Notifications on my app can be sent through a simple “if” statement nested inside the if statement for reading the bytes from my Bluetooth Module. The block “callNotificationStyle1.HasNotificationsPermission” is used to test if the app has permission from the phone’s operating system (OS) to send notifications. If permission is allowed, I can call a notification that can go off even if the device is on other applications or in sleep mode. 
 
 I was also able to sow my flex sensor onto my back brace to prevent the flex sensor from falling. Since it was my first time sewing, I searched how to do a simple running stitch to connect patches of fabric to my back brace that would essentially act as a pocket for my flex sensor to slip into. 
- 
-![Headstone Image](sewing.JPG)
 
+![Headstone Image](sewing.JPG)
 **Figure 3. The orange string that lines the cloth is an example of a running stitch, a basic light stitch that allows for the fabric to stick to my back brace.**
 
 One challenge I had with the project was finding the right notification extension. Initially, when I started working on my notifications I downloaded an extension that wasn’t very compatible with the newer versions of MIT App Inventor. This left me very confused because despite following the extension’s documentation, the app wouldn’t send out a notification. I eventually switched to a more recently updated extension, along with allowing notification permissions on my app, which resolved this issue. Another challenge I had was with sowing on my back brace. I had never seen it before, so it was hard to get started. With my shaky hands, I was unable to make very precise stitches which led to a functional, but not appealing, design. 
@@ -66,7 +65,6 @@ Many of my biggest challenges during my time at Bluestamp were the inconsistency
 I think my greatest triumph was when I was able to connect my Bluetooth Module to my Android as I struggled to connect them for almost an entire week and started to become pretty discouraged. So finally getting it to work was very satisfying and motivated me to keep going. 
 
 ![Headstone Image](broken_flex_sensor.JPG)
- 
 **Figure 4. Because my flex sensor is naturally bent when the user has a straight back, to test the Bluetooth Module, I had to bend the flex sensor very often which caused the base of the flex sensor to become loose due to wear and tear. This lead to inconsistency with the flex sensor's values.**
 
 I believe I learned a lot about both software and hardware during my time and Bluestamp. I learned techniques on soldering, what a voltage divider was, and how to properly wire Arduino.My time at Bluestamp has opened my eyes to the possible paths 
@@ -96,7 +94,7 @@ Originally my plan was to connect the RX and TX pins of my Bluetooth to the 0 an
 I was able to specifically send out the individual Bytes by creating an object using the Software Serial class from the SoftwareSerial library, where I could then specify what data pins I could connect to my Bluetooth pins to without sending data from my Serial Monitor as well. By using the .write method, I was able to print my data to the TX pin, then use the .flush method to clear the queue of bytes. 
 
 ![Headstone Image](Bluetooth_Diagram.jpg)
- 
+
 **Figure 5. On my Arduino with an object created with the Software Serial class the .write method prints data to the TX pin of the Bluetooth Module, which travels through the wires from my pin 11 onto my Bluetooth module which is transmitted to my Android.**
 
 Now that my Arduino was able to send data to my phone, I needed to create an app to read the data and display if the user was slouching or not. For this I used MIT App Inventor. The MIT app inventor uses block-style coding which I was very unfamiliar with, so it took me a very long time to understand what I was doing. I was able to establish a Bluetooth connection with the module by creating a list picker element which, when clicked, would show the address and names of available connections.
@@ -137,13 +135,13 @@ When you slouch, your back stretches as you bend forward. The way my device is c
 
 ![Headstone Image](circuit.jpg)
 
-**Figure 8. This diagram is the circuit schematic of the flex sensor the Analog reader reads the voltage in-between the flex sensor and the 330 Ohm resistor.**
+**Figure 4. This diagram is the circuit schematic of the flex sensor the Analog reader reads the voltage in-between the flex sensor and the 330 Ohm resistor.**
 
 In order to tell if the flex sensor was bent, I needed to find the resistance of the flex as the flex sensor is a variable resistor, meaning that its resistance changes based on how it bends. However the Arduino is unable to measure resistance, but it is able to measure voltage. We can find the change in voltage by using a voltage divider. The equation for the Voltage is Vout=Vin*R2R1+R2 as the two resistors are in series which means that we must add the resistance of both resistors. R1 represents the first resistor which is our 330-Ohm resistor and R2 represents our flex sensor’s resistance which may change based on how it bends. This allows for the analogRead function of my code to see the difference in voltage from the flex sensor bending as current passes through the flex sensor. From there I can return the values of the flex sensor as the sensor is straightened or bent. analogRead is able to convert the voltage from 0 to 5v into a value from 0 to 1024. Much of my time was spent testing what value the flex sensor exceeds when the user slouches. I discovered that the value hovers anywhere from 14-17. If the flex sensor has those values, the user will count as slouching in which the words "slouching" will appear on the serial monitor.
 
 ![Headstone Image](SchematicFixed.jpg)
 
-**Figure 9. Current schematic connecting the flex sensor and the LED strip**
+**Figure 8. Current schematic connecting the flex sensor and the LED strip**
 
 I also have an LED strip connected to the breadboard. I was able to power both the flex sensor and the LED lights with the 5V pin of the Arduino by making a power line on the edges of the breadboard with a wire connected to one part of the power line and the 5V pin while doing the same when connecting ground. I need to code the lights to begin flashing when slouching was detected. I was able to do so with the strip.fill(A,B,C) member function. Strip is the class object created with certain member variables such as LED count and LED_PIN which allows us to control the LED strip. A dictates the color of the Neopixels, B tells where the first Neopixel should be lit up, and C tells where the last Neopixel should be lit up. Unlike a regular LED which would just turn on with a set color if it had power, the individual Neopixels are able to do different actions by being connected to a data pin on the Arduino which allows me to send data to the Neopixels and tell them which individual Neopixels should turn on and in what color. Now I need to make the lights flash instead of just showing a solid color. I was able to do this by adding delay(500); inside the if statement describing what to do if the analogRead value is too high. When the analog value is too high, the lights turn on, then the program waits 500 ms to then turn the lights off using the strip.fill function. This created a half second delay wherever the lights flash in certain intervals creating a flashing effect.
 
@@ -177,7 +175,7 @@ Essentially the arcade works by using either the batteries or the micro USB to p
 
 ![Headstone Image](Cropped_Chip.jpg)
 
-**Figure 10. The IC Chip here is the brain/command center of the arcade, all actions you do in your game go through here first. Information enters and leaves the IC Chip via the pins which are the silver parts the stick out of the Chip. Each pin is unique in both position and function. When information enters the chip it is processed by layers of semiconductor wafers, copper, and other materials, which interconnect to form transistors, resistors or other components in a circuit**
+**Figure 9. The IC Chip here is the brain/command center of the arcade, all actions you do in your game go through here first. Information enters and leaves the IC Chip via the pins which are the silver parts the stick out of the Chip. Each pin is unique in both position and function. When information enters the chip it is processed by layers of semiconductor wafers, copper, and other materials, which interconnect to form transistors, resistors or other components in a circuit**
 
 For example, the console can translate you pressing the right button of the arcade into the action of moving the tetris piece to the right. This is by sending a signal onto the IC Chip which translates the signal into an action onto the LED Matrix. This allows the player to see that the tetris piece moves to the right.
 
