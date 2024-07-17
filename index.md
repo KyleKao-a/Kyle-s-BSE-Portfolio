@@ -144,7 +144,7 @@ For my first milestone, I have a working basic prototype of my posture corrector
 ![Headstone Image](Flex-Sensor-bending-conditions.webp)
 --->
 
-<p align="center"><img src="Flex-Sensor-bending-conditions.webp" width="450" height="250">
+<p align="center"><img src="Flex-Sensor-bending-conditions.webp" width="450" height="225">
  
 **Figure 7. A flex sensor works by having conductive ink on a small strip of plastic which acts as a variable resistor. By flexing the strip of plastic, you change the flex sensor's resistance. The more you bend the higher the resistance.
 Image from https://microcontrollerslab.com/flex-sensor-arduino-tutorial/**
