@@ -24,7 +24,8 @@ Most importantly, I was able to find a consistent way to determine a user’s po
 <!--
 ![Headstone Image](protoshield.jpeg)
 --->
-<p align="center"><img src="protoshield.jpeg" width="425" height="500">
+<figure><p align="center"><img src="protoshield.jpeg" width="425" height="500"></figure>
+
 
 **Figure 1. The protoshield not only is a great way to make sure your wires stay connected onto the Arduino, the shield is also able to act as a breadboard saving space. The protoshield is also able to easily be taken on and off the Arduino allowing you to easily use the same Arduino for other projects.**
 
@@ -34,7 +35,7 @@ My solution was to use a tilt sensor which solved many of the flex sensor’s sh
 <!--
 ![Headstone Image](Tilt_sensor.JPG)
 --->
-<p align="center"><img src="Tilt_sensor.JPG" width="550" height="300">
+<figure><p align="center"><img src="Tilt_sensor.JPG" width="550" height="300"></figure>
 
 **Figure 2. As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.
 Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutorial/**
@@ -62,7 +63,7 @@ I was also able to sow my flex sensor onto my back brace to prevent the flex sen
 <!--
 ![Headstone Image](sewing.JPG)
 --->
-<p align="center"><img src="sewing.JPG" width="550" height="625">
+<figure><p align="center"><img src="sewing.JPG" width="550" height="625"></figure>
 
 **Figure 3. The orange string that lines the cloth is an example of a running stitch, a basic light stitch that allows for the fabric to stick to my back brace.**
 
