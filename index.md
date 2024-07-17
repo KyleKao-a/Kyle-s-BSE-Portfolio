@@ -105,7 +105,7 @@ I was able to specifically send out the individual Bytes by creating an object u
 <!---
 ![Headstone Image](Bluetooth_Diagram.jpg)
 --->
-<p align="center"><img src="sewing.JPG" width="550" height="425">
+<p align="center"><img src="Bluetooth_Diagram.jpg" width="550" height="425">
  
 **Figure 5. On my Arduino with an object created with the Software Serial class the .write method prints data to the TX pin of the Bluetooth Module, which travels through the wires from my pin 11 onto my Bluetooth module which is transmitted to my Android.**
 
