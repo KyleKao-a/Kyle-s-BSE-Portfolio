@@ -62,7 +62,7 @@ I was also able to sow my flex sensor onto my back brace to prevent the flex sen
 <!--
 ![Headstone Image](sewing.JPG)
 --->
-<img src="Tilt_sensor.JPG" width="550" height="300">
+<img src="sewing.JPG" width="550" height="300">
 
 **Figure 3. The orange string that lines the cloth is an example of a running stitch, a basic light stitch that allows for the fabric to stick to my back brace.**
 
