@@ -112,9 +112,12 @@ I was able to specifically send out the individual Bytes by creating an object u
 Now that my Arduino was able to send data to my phone, I needed to create an app to read the data and display if the user was slouching or not. For this I used MIT App Inventor. The MIT app inventor uses block-style coding which I was very unfamiliar with, so it took me a very long time to understand what I was doing. I was able to establish a Bluetooth connection with the module by creating a list picker element which, when clicked, would show the address and names of available connections.
 
 When the Bluetooth Module is connected I had to create a system that could read the data it received. For this I used the clock component that would trigger every one-tenth of a second. From there I used a block labeled “call BluetoothClient1.ReceiveUnsigned1ByteNumber”. This block is able to read the bytes sent from my module. Because the bytes I sent were all positive numbers I would receive an unsigned byte which is always positive. With the bytes sent by my Bluetooth, I constructed a basic if state that would determine if the user is slouching based on what number it received. If the app received ‘0’ the user was not slouching if the app received ‘1’ the user is slouching. 
-
+<!--
 ![Headstone Image](MIT_Milestone_2_code.jpg)
+--->
 
+<p align="center"><img src="MIT_Milestone_2_code.jpg" width="550" height="425">
+ 
 **Figure 6. On my MIT app inventor, the blocks here are for connecting Bluetooth and for changing the text if the user is slouching or not slouching. Listpicker1 acts as the Bluetooth picker with "setListPicker1.Elements" giving us a list of availble connections. When the Bluetooth is connected the app runs and if-if else statement in which it reads the unsigned byte recieved by the Bluetooth. Based on the number received, the text on ListPicker 2 either changes to slouching or not slouching**
 
 I encountered multiple issues when connecting my Bluetooth module both from the module being difficult to work with, along with me not quite understanding how the Bluetooth worked. I would blindly follow guides I found online instead of trying to understand what the methods in the Software Serial library or the blocks in the MIT App inventor did. Eventually by patiently sitting down and learning what they did, I was able to make my app work. 
