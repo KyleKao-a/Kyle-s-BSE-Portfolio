@@ -116,7 +116,7 @@ When the Bluetooth Module is connected I had to create a system that could read 
 ![Headstone Image](MIT_Milestone_2_code.jpg)
 --->
 
-<p align="center"><img src="MIT_Milestone_2_code.jpg" width="550" height="425">
+<p align="center"><img src="MIT_Milestone_2_code.jpg" width="550" height="325">
  
 **Figure 6. On my MIT app inventor, the blocks here are for connecting Bluetooth and for changing the text if the user is slouching or not slouching. Listpicker1 acts as the Bluetooth picker with "setListPicker1.Elements" giving us a list of availble connections. When the Bluetooth is connected the app runs and if-if else statement in which it reads the unsigned byte recieved by the Bluetooth. Based on the number received, the text on ListPicker 2 either changes to slouching or not slouching**
 
