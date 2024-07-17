@@ -21,21 +21,23 @@ For my first set of modifications I have done 2 changes to my project. First I s
  Soldering my wires onto a protoshield provides 2 great benefits for me as the protoshield both acts as a way for me to semi-permanently attach wires to my arduino, and as a breadboard. This has allowed my project to be much more compact and makes organization much easier. 
  
 Most importantly, I was able to find a consistent way to determine a user’s posture by replacing my flex sensor with a tilt sensor. The flex sensor gave me a lot of issues throughout the entire process of making my posture corrector. First, it was rather difficult to implement onto my back brace as I had to tie down both ends of the sensor and it would often have trouble sticking onto the back brace.
-<!--
-![Headstone Image](protoshield.jpeg)
---->
-<figure><p align="center"><img src="protoshield.jpeg" width="425" height="500"></figure>
 
+![Headstone Image](protoshield.jpeg)
+<!--
+<figure><p align="center"><img src="protoshield.jpeg" width="425" height="500">
+</figure>
+--->
 
 **Figure 1. The protoshield not only is a great way to make sure your wires stay connected onto the Arduino, the shield is also able to act as a breadboard saving space. The protoshield is also able to easily be taken on and off the Arduino allowing you to easily use the same Arduino for other projects.**
 
 Second, the flex sensor would break very often, requiring me to get replacements. When I tested my posture corrector every day to try and achieve consistency, not only would it mold the plastic of the flex sensor, it would cause parts of the sensor to break off. Third, its values were very inconsistent. In the beginning, I originally used a voltage divider to have my Arduino return the resistance values of the flex sensor as voltage. However this not only made the wiring of the project very complicated, it was very inconsistent. The inconsistency made tuning my flex sensor code a massive pain. One day the values on my serial monitor would work fine, another day I would spend half an hour praying that the values don’t jump from the tens to the hundreds on a whim.
 
 My solution was to use a tilt sensor which solved many of the flex sensor’s shortcomings. Instead of testing how the back bends, the tilt sensor instead uses the Earth’s gravity to identify if the user’s back is property straight or not. Within the tilt sensors’ metal case contains a ball, along with 2 pins at the base of the case. When the ball is at the base of the sensor an electrical current is able to flow to both pins, however if the sensor were to be tilted in which the ball falls from the base, the connection is then broken. The sensor is able to interpret this change as a high and a low. Rather than a range of values with the flex sensor, the tilt sensor only sends binary values which allows the sensor to be much more consistent. Furthermore both wiring and attatching the tilt sensor was much easier than the flex sensor. The tilt sensor is much smaller, making it easier to attach to my brace and doesn’t require a voltage divider making the wiring of the project much more simplistic.
-<!--
+
 ![Headstone Image](Tilt_sensor.JPG)
---->
+<!--
 <figure><p align="center"><img src="Tilt_sensor.JPG" width="550" height="300"></figure>
+--->
 
 **Figure 2. As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.
 Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutorial/**
@@ -60,10 +62,11 @@ The MIT app inventor allows for extensions similar to libraries that we download
 I spent much of my time understanding how my Notification extension worked. Because I spent a lot of time working on the MIT App inventor, I was able to quickly download and find the extension’s documentation. Notifications on my app can be sent through a simple “if” statement nested inside the if statement for reading the bytes from my Bluetooth Module. The block “callNotificationStyle1.HasNotificationsPermission” is used to test if the app has permission from the phone’s operating system (OS) to send notifications. If permission is allowed, I can call a notification that can go off even if the device is on other applications or in sleep mode. 
 
 I was also able to sow my flex sensor onto my back brace to prevent the flex sensor from falling. Since it was my first time sewing, I searched how to do a simple running stitch to connect patches of fabric to my back brace that would essentially act as a pocket for my flex sensor to slip into. 
-<!--
+
 ![Headstone Image](sewing.JPG)
---->
+<!--
 <figure><p align="center"><img src="sewing.JPG" width="550" height="625"></figure>
+--->
 
 **Figure 3. The orange string that lines the cloth is an example of a running stitch, a basic light stitch that allows for the fabric to stick to my back brace.**
 
@@ -71,10 +74,11 @@ One challenge I had with the project was finding the right notification extensio
 
 Many of my biggest challenges during my time at Bluestamp were the inconsistency of my hardware, my inexperience with software, and just general mistakes when soldering or wiring. There were many times when my flex sensor would either break from wear and tear or be extremely inconsistent by having its values increase over time or begin fluctuating from high to low. Unfortunately, because the flex sensor was so integral to my project, it was always a roadblock whenever I wanted to test my posture corrector. When I was working on my Arduino or the MIT app inventor I had many logic or runtime errors due to oversights in my code. There were also times when I needed replacements on materials like my Arduino and flex sensor, as I would make mistakes like shorting the Arduino when making a power line, or when burning my flex sensor when soldering. 
 I think my greatest triumph was when I was able to connect my Bluetooth Module to my Android as I struggled to connect them for almost an entire week and started to become pretty discouraged. So finally getting it to work was very satisfying and motivated me to keep going. 
-<!--
+
 ![Headstone Image](broken_flex_sensor.JPG)
---->
+<!--
 <p align="center"><img src="broken_flex_sensor.JPG" width="425" height="500">
+--->
  
 **Figure 4. Because my flex sensor is naturally bent when the user has a straight back, to test the Bluetooth Module, I had to bend the flex sensor very often which caused the base of the flex sensor to become loose due to wear and tear. This lead to inconsistency with the flex sensor's values.**
 
@@ -103,22 +107,23 @@ I spent a large portion of time understanding the basics of how the Bluetooth HC
 Originally my plan was to connect the RX and TX pins of my Bluetooth to the 0 and 1 data pins on the Arduino respectively to send data. However I found quickly that this wouldn’t work. By connecting the Bluetooth’s pins to the 0 and 1 data pins of the Arduino, while it would send the bytes from the Bluetooth module, it would also send all the other data from my Arduino’s Serial Monitor, which I couldn’t use.
 
 I was able to specifically send out the individual Bytes by creating an object using the Software Serial class from the SoftwareSerial library, where I could then specify what data pins I could connect to my Bluetooth pins to without sending data from my Serial Monitor as well. By using the .write method, I was able to print my data to the TX pin, then use the .flush method to clear the queue of bytes. 
-<!---
+
 ![Headstone Image](Bluetooth_Diagram.jpg)
---->
+<!--
 <p align="center"><img src="Bluetooth_Diagram.jpg" width="550" height="425">
+--->
  
 **Figure 5. On my Arduino with an object created with the Software Serial class the .write method prints data to the TX pin of the Bluetooth Module, which travels through the wires from my pin 11 onto my Bluetooth module which is transmitted to my Android.**
 
 Now that my Arduino was able to send data to my phone, I needed to create an app to read the data and display if the user was slouching or not. For this I used MIT App Inventor. The MIT app inventor uses block-style coding which I was very unfamiliar with, so it took me a very long time to understand what I was doing. I was able to establish a Bluetooth connection with the module by creating a list picker element which, when clicked, would show the address and names of available connections.
 
 When the Bluetooth Module is connected I had to create a system that could read the data it received. For this I used the clock component that would trigger every one-tenth of a second. From there I used a block labeled “call BluetoothClient1.ReceiveUnsigned1ByteNumber”. This block is able to read the bytes sent from my module. Because the bytes I sent were all positive numbers I would receive an unsigned byte which is always positive. With the bytes sent by my Bluetooth, I constructed a basic if state that would determine if the user is slouching based on what number it received. If the app received ‘0’ the user was not slouching if the app received ‘1’ the user is slouching. 
-<!--
+
 ![Headstone Image](MIT_Milestone_2_code.jpg)
+<!--
+<p align="center"><img src="MIT_Milestone_2_code.jpg" width="550" height="325">
 --->
 
-<p align="center"><img src="MIT_Milestone_2_code.jpg" width="550" height="325">
- 
 **Figure 6. On my MIT app inventor, the blocks here are for connecting Bluetooth and for changing the text if the user is slouching or not slouching. Listpicker1 acts as the Bluetooth picker with "setListPicker1.Elements" giving us a list of availble connections. When the Bluetooth is connected the app runs and if-if else statement in which it reads the unsigned byte recieved by the Bluetooth. Based on the number received, the text on ListPicker 2 either changes to slouching or not slouching**
 
 I encountered multiple issues when connecting my Bluetooth module both from the module being difficult to work with, along with me not quite understanding how the Bluetooth worked. I would blindly follow guides I found online instead of trying to understand what the methods in the Software Serial library or the blocks in the MIT App inventor did. Eventually by patiently sitting down and learning what they did, I was able to make my app work. 
@@ -141,20 +146,22 @@ For your second milestone, explain what you've worked on since your previous mil
 # First Milestone
 
 For my first milestone, I have a working basic prototype of my posture corrector. This is done by having a flex sensor attached to a back brace that is attached to the upper portion of the back along. There are also LED lights that will respond to the values returned by my flex sensor.
-<!--
-![Headstone Image](Flex-Sensor-bending-conditions.webp)
---->
 
+![Headstone Image](Flex-Sensor-bending-conditions.webp)
+
+<!--
 <p align="center"><img src="Flex-Sensor-bending-conditions.webp" width="450" height="225">
+--->
  
 **Figure 7. A flex sensor works by having conductive ink on a small strip of plastic which acts as a variable resistor. By flexing the strip of plastic, you change the flex sensor's resistance. The more you bend the higher the resistance.
 Image from https://microcontrollerslab.com/flex-sensor-arduino-tutorial/**
 
 When you slouch, your back stretches as you bend forward. The way my device is configured is that when the user's back is in a proper position, the flex sensor will be bent. When the flex sensor is bent the conductive ink particles are farther apart increasing the resistance in the flex sensor. Likewise, when the user reclines the flex sensor is straightened as the back stretches. This will allow the conductive ink particles to be close together, allowing them to have less resistance.
-<!--
+
 ![Headstone Image](circuit.jpg)
---->
+<!--
 <p align="center"><img src="circuit.jpg" width="325" height="225">
+--->
 
 **Figure 8. This diagram is the circuit schematic of the flex sensor the Analog reader reads the voltage in-between the flex sensor and the 330 Ohm resistor.**
 
