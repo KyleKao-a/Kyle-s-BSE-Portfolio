@@ -1,5 +1,5 @@
 # Posture Corrector
-Tired of your parents nagging you to fix your posture? Now you can have a machine to do that for you! The goal of the posture corrector is to help the user develop better posture naturally instead of a traditional back brace. This is through a flex sensor which is able to detect slouching, which sends a message from the arduino to your phone notifying you to fix your posture.
+Tired of your parents nagging you to fix your posture? Now you can have a machine to do that for you! The goal of the posture corrector is to help the user develop better posture naturally instead of a traditional back brace. This is through a tilt sensor which is able to detect slouching, which sends a message from the arduino to your phone notifying you to fix your posture.
  
 <!---
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -13,7 +13,7 @@ You should comment out all portions of your portfolio that you have not complete
 -->
 ![Headstone Image](Kyle_K.jpg)
 
-# Modifications Part 1
+# Modifications Pt.1
 For my first set of modifications I have done 2 changes to my project. First I soldered my wires onto an Arduino using a protoshield.
 
 <ins>Why add these Modifications?</ins>
@@ -24,11 +24,11 @@ Most importantly, I was able to find a consistent way to determine a user’s po
 
 ![Headstone Image](protoshield.jpeg)
 
-**Figure 1. The protoshield not only is a great way to make sure your wires stay connected onto the Arduino, the shield is also able to act as a breadboard saving space. The protoshield is also able to easily be taken on and off the Arduino allowing you to easily use the Arduino for other projects without having to take off your current project's wiring.**
+**Figure 1. The protoshield not only is a great way to make sure your wires stay connected onto the Arduino, the shield is also able to act as a breadboard saving space. The protoshield is also able to easily be taken on and off the Arduino allowing you to easily use the same Arduino for other projects.**
 
-Second, the flex sensor would break very often, requiring me to get replacements. When I tested my posture corrector every day to try and achieve consistency, not only would it mold the plastic, it would cause parts of the sensor to break off. Third, its values were very inconsistent. In the beginning, I originally used a voltage divider to have my arduino return the resistance values of the flex sensor as voltage. However this not only made the wiring of the project needlessly convoluted, it was very inconsistent. The inconsistency made tuning my flex sensor code a massive pain. One day the values on my serial monitor would work fine, another day I would spend half an hour praying that the values don’t jump from the tens to the hundreds on a whim.
+Second, the flex sensor would break very often, requiring me to get replacements. When I tested my posture corrector every day to try and achieve consistency, not only would it mold the plastic of the flex sensor, it would cause parts of the sensor to break off. Third, its values were very inconsistent. In the beginning, I originally used a voltage divider to have my Arduino return the resistance values of the flex sensor as voltage. However this not only made the wiring of the project very complicated, it was very inconsistent. The inconsistency made tuning my flex sensor code a massive pain. One day the values on my serial monitor would work fine, another day I would spend half an hour praying that the values don’t jump from the tens to the hundreds on a whim.
 
-My solution was to use a tilt sensor which solved many of the flex sensor’s shortcomings. Instead of testing how the back bends, the tilt sensor instead uses the Earth’s gravity to identify if the user’s back is property straight or not. Within the tilt sensors’ metal case contains a ball, along with 2 pins at the base of the case. When the ball is at the base of the sensor a electrical connection is able to connect both pins, however if the sensor were to be tilted in which the ball falls from the base, the connection is then broken. The sensor is able to interpret this change as a high and a low. Rather than a range of values with the flex sensor, the tilt sensor only sends binary values which allows the sensor to be much more consistent. Furthermore both wiring and taping the sensor are much easier than the flex sensor. The tilt sensor is much smaller, making it easier to attach to my brace and doesn’t require a voltage divider making the wiring of the project much simpler.
+My solution was to use a tilt sensor which solved many of the flex sensor’s shortcomings. Instead of testing how the back bends, the tilt sensor instead uses the Earth’s gravity to identify if the user’s back is property straight or not. Within the tilt sensors’ metal case contains a ball, along with 2 pins at the base of the case. When the ball is at the base of the sensor an electrical current is able to flow to both pins, however if the sensor were to be tilted in which the ball falls from the base, the connection is then broken. The sensor is able to interpret this change as a high and a low. Rather than a range of values with the flex sensor, the tilt sensor only sends binary values which allows the sensor to be much more consistent. Furthermore both wiring and attatching the tilt sensor was much easier than the flex sensor. The tilt sensor is much smaller, making it easier to attach to my brace and doesn’t require a voltage divider making the wiring of the project much more simplistic.
 
 ![Headstone Image](Tilt_sensor.JPG)
 
@@ -37,13 +37,13 @@ Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutor
  
 A challenge I initially faced was stitching the tilt sensor was more difficult than I initially expected as it has some protruding parts that I had to create holes in my fabric to accommodate. Soldering my wires into the protoshield was also rather difficult as soldering is semi-permanent so I always had to double/triple check to see if I was soldering the right wires, which was very stressful for me. 
 
-# Modifications Part 2
+# Modifications Pt.2
 
 For my second modification, I made my posture corrector portable using a power bank along with sewing my Arduino and my LED lights to my posture corrector. 
 
-This allows my posture corrector to be used essentially everywhere as I no longer need to have my Arduino connected to my laptop for power. To sew the Arduino and LED lights to my brace, I had to make multiple loops with my string to properly secure them in place. Sewing my Arduino, power bank, and LED lights into my back brace makes my project much more organized and easier to transport. Originally I had to carry the Arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
+This allows my posture corrector to be used essentially everywhere as I no longer need to have my Arduino connected to my laptop for power. To sew the Arduino and LED lights to my brace, I had to make multiple loops with my string to properly secure them in place. Sewing my Arduino, power bank, and LED lights into my back brace makes my project much easier to transport. Originally I had to carry the Arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
 
-A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off and requiring a replacement. However, my previous experience in sewing made this attempt look much more appealing as I learned to better space my running stitches and better tie off my string once I'm done sewing. 
+A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off and requiring a replacement. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c_0KX9H5bLY?si=OWW0cfxlXA8gGvAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
