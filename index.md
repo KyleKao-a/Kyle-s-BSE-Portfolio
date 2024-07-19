@@ -109,7 +109,7 @@ I was able to specifically send out the individual Bytes by creating an object u
 <!--
 ![Headstone Image](Bluetooth_Diagram.jpg)
 --->
-<img src="Bluetooth_Diagram" alt="bluetooth_diagram" width="500" class="center"/>
+<img src="Bluetooth_Diagram.jpg" alt="bluetooth_diagram" width="500" class="center"/>
 **Figure 5. On my Arduino with an object created with the Software Serial class the .write method prints data to the TX pin of the Bluetooth Module, which travels through the wires from my pin 11 onto my Bluetooth module which is transmitted to my Android.**
 
 Now that my Arduino was able to send data to my phone, I needed to create an app to read the data and display if the user was slouching or not. For this I used MIT App Inventor. The MIT app inventor uses block-style coding which I was very unfamiliar with, so it took me a very long time to understand what I was doing. I was able to establish a Bluetooth connection with the module by creating a list picker element which, when clicked, would show the address and names of available connections.
