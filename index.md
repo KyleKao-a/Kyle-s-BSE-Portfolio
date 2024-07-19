@@ -19,7 +19,7 @@ You should comment out all portions of your portfolio that you have not complete
 # Demo Night
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xgYWWkLmvTc?si=iNB2wNLeGhQAFqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Modifications Pt.1
+# First Modification
 
 For my first set of modifications I have done 2 changes to my project. First I soldered my wires onto an Arduino using a protoshield.
 
@@ -50,7 +50,7 @@ Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutor
  
 A challenge I initially faced was stitching the tilt sensor was more difficult than I initially expected as it has some protruding parts that I had to create holes in my fabric to accommodate. Soldering my wires into the protoshield was also rather difficult as soldering is semi-permanent so I always had to double/triple check to see if I was soldering the right wires, which was very stressful for me. 
 
-# Modifications Pt.2
+# Second Modification 
 
 For my second modification, I made my posture corrector portable using a power bank along with sewing my Arduino and my LED lights to my posture corrector. 
 
