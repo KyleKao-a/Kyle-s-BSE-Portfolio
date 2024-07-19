@@ -1,5 +1,5 @@
 # Posture Corrector
-Tired of your parents nagging you to fix your posture? Now you can have a machine to do that for you! The goal of the posture corrector is to help the user develop better posture naturally instead of a traditional back brace. This is through a tilt sensor which is able to detect slouching, which sends a message from the arduino to your phone notifying you to fix your posture.
+Tired of your parents nagging you to fix your posture? Now you can have a machine to do that for you! The goal of the posture corrector is to help the user develop better posture naturally instead of a traditional back brace. This is through the use of a tilt sensor, which is able to detect tilt when the user slouches. When slouching is detected, a message is sent from an Arduino to your phone notifying you to fix your posture.
  
 <!---
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -14,12 +14,13 @@ You should comment out all portions of your portfolio that you have not complete
 <!---
 ![Headstone Image](Kyle_K.jpg)
 -->
-<img src="Kyle_K.jpg" alt="headshot" width="400" class="center"/>
+<img src="Kyle_K.jpg" alt="headshot" width="500" class="center"/>
 
 # Demo Night
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xgYWWkLmvTc?si=iNB2wNLeGhQAFqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Modifications Pt.1
+
 For my first set of modifications I have done 2 changes to my project. First I soldered my wires onto an Arduino using a protoshield.
 
 <ins>Why add these Modifications?</ins>
