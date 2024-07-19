@@ -14,7 +14,7 @@ You should comment out all portions of your portfolio that you have not complete
 <!---
 ![Headstone Image](Kyle_K.jpg)
 -->
-<img src="Kyle_K.jpg" alt="headshot" width="200" class="center"/>
+<img src="Kyle_K.jpg" alt="headshot" width="400" class="center"/>
 
 # Demo Night
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xgYWWkLmvTc?si=iNB2wNLeGhQAFqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
