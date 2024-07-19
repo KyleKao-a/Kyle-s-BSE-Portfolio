@@ -19,6 +19,16 @@ You should comment out all portions of your portfolio that you have not complete
 # Demo Night
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xgYWWkLmvTc?si=iNB2wNLeGhQAFqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+# Second Modification 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c_0KX9H5bLY?si=OWW0cfxlXA8gGvAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+For my second modification, I made my posture corrector portable using a power bank along with sewing my Arduino and my LED lights to my posture corrector. 
+
+This allows my posture corrector to be used essentially everywhere as I no longer need to have my Arduino connected to my laptop for power. To sew the Arduino and LED lights to my brace, I had to make multiple loops with my string to properly secure them in place. Sewing my Arduino, power bank, and LED lights into my back brace makes my project much easier to transport. Originally I had to carry the Arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
+
+A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off and requiring a replacement. 
+
 # First Modification
 
 For my first set of modifications I have done 2 changes to my project. First I soldered my wires onto an Arduino using a protoshield.
@@ -50,17 +60,9 @@ Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutor
  
 A challenge I initially faced was stitching the tilt sensor was more difficult than I initially expected as it has some protruding parts that I had to create holes in my fabric to accommodate. Soldering my wires into the protoshield was also rather difficult as soldering is semi-permanent so I always had to double/triple check to see if I was soldering the right wires, which was very stressful for me. 
 
-# Second Modification 
-
-For my second modification, I made my posture corrector portable using a power bank along with sewing my Arduino and my LED lights to my posture corrector. 
-
-This allows my posture corrector to be used essentially everywhere as I no longer need to have my Arduino connected to my laptop for power. To sew the Arduino and LED lights to my brace, I had to make multiple loops with my string to properly secure them in place. Sewing my Arduino, power bank, and LED lights into my back brace makes my project much easier to transport. Originally I had to carry the Arduino in my hands but now I have essentially full range of motion when moving with my back brace. 
-
-A challenge I faced when doing the project was that I was adjusting my tilt sensor too much, causing it to break off and requiring a replacement. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c_0KX9H5bLY?si=OWW0cfxlXA8gGvAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 # Final Milestone
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NXD6nar5XYE?si=a_GLr6sXmp0tv7Gj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my third milestone, I added a notification extension to my MIT app that will notify the user of their poor posture as long as the Bluetooth module is connected to their device. 
 The MIT app inventor allows for extensions similar to libraries that we download for our Arduino, giving us different methods/functions.
@@ -91,8 +93,6 @@ I think my greatest triumph was when I was able to connect my Bluetooth Module t
 I believe I learned a lot about both software and hardware during my time and Bluestamp. I learned techniques on soldering, what a voltage divider was, and how to properly wire Arduino.My time at Bluestamp has opened my eyes to the possible paths 
  I could take in STEM and has sparked my interest in fields like computer and electrical engineering. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NXD6nar5XYE?si=a_GLr6sXmp0tv7Gj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -105,6 +105,8 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you hope to learn in the future after everything you've learned at BSE-->
 
 # Second Milestone
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AnIjfcEkQ0s?si=EhSsgPH__iy9zQTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my second milestone, I have created a Bluetooth connection with my Arduino along with a rudimentary app on my Android, which I created using MIT App Inventor. This app is able to change text on-screen to tell if the user is either slouching or not slouching based on what it receives from my Bluetooth module. 
 
@@ -131,8 +133,6 @@ When the Bluetooth Module is connected I had to create a system that could read 
 I encountered multiple issues when connecting my Bluetooth module both from the module being difficult to work with, along with me not quite understanding how the Bluetooth worked. I would blindly follow guides I found online instead of trying to understand what the methods in the Software Serial library or the blocks in the MIT App inventor did. Eventually by patiently sitting down and learning what they did, I was able to make my app work. 
 For my third milestone, I plan on finalizing a lot of my project. This includes soldering my wires, permanently attaching my flex sensor onto my back brace, and adding a notification system onto my app with my new understanding of what the blocks do. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AnIjfcEkQ0s?si=EhSsgPH__iy9zQTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -146,6 +146,8 @@ For your second milestone, explain what you've worked on since your previous mil
 
 
 # First Milestone
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TSYudepJFzY?si=NndYQ7sqB-8C4Hcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my first milestone, I have a working basic prototype of my posture corrector. This is done by having a flex sensor attached to a back brace that is attached to the upper portion of the back along. There are also LED lights that will respond to the values returned by my flex sensor.
 
@@ -175,9 +177,6 @@ A challenging aspect of my project was with hardware, specifically soldering and
 Another challenge I faced was in the software aspect of my project, as I was quite unfamiliar with coding on an Arduino. I initially struggled with defining classes and using the various functions provided by the NEOPIXEL library. The struggle has helped me to gain a better understanding of coding on an Arduino and how to troubleshoot issues.
 
 For my second milestone, I plan on further developing the software aspect of my project with my newfound knowledge of coding on Arduino. This is by getting a Bluetooth module to work with the Arduino. I also plan to have a basic version of my app using the MIT App Inventor.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TSYudepJFzY?si=NndYQ7sqB-8C4Hcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
