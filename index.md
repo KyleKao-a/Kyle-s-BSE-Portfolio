@@ -27,6 +27,7 @@ For my first set of modifications I have done 2 changes to my project. First I s
  Soldering my wires onto a protoshield provides 2 great benefits for me as the protoshield both acts as a way for me to semi-permanently attach wires to my arduino, and as a breadboard. This has allowed my project to be much more compact and makes organization much easier. 
  
 Most importantly, I was able to find a consistent way to determine a user’s posture by replacing my flex sensor with a tilt sensor. The flex sensor gave me a lot of issues throughout the entire process of making my posture corrector. First, it was rather difficult to implement onto my back brace as I had to tie down both ends of the sensor and it would often have trouble sticking onto the back brace.
+
 <!--
 ![](protoshield.jpeg)
 -->
@@ -37,10 +38,11 @@ Most importantly, I was able to find a consistent way to determine a user’s po
 Second, the flex sensor would break very often, requiring me to get replacements. When I tested my posture corrector every day to try and achieve consistency, not only would it mold the plastic of the flex sensor, it would cause parts of the sensor to break off. Third, its values were very inconsistent. In the beginning, I originally used a voltage divider to have my Arduino return the resistance values of the flex sensor as voltage. However this not only made the wiring of the project very complicated, it was very inconsistent. The inconsistency made tuning my flex sensor code a massive pain. One day the values on my serial monitor would work fine, another day I would spend half an hour praying that the values don’t jump from the tens to the hundreds on a whim.
 
 My solution was to use a tilt sensor which solved many of the flex sensor’s shortcomings. Instead of testing how the back bends, the tilt sensor instead uses the Earth’s gravity to identify if the user’s back is property straight or not. Within the tilt sensors’ metal case contains a ball, along with 2 pins at the base of the case. When the ball is at the base of the sensor an electrical current is able to flow to both pins, however if the sensor were to be tilted in which the ball falls from the base, the connection is then broken. The sensor is able to interpret this change as a high and a low. Rather than a range of values with the flex sensor, the tilt sensor only sends binary values which allows the sensor to be much more consistent. Furthermore both wiring and attatching the tilt sensor was much easier than the flex sensor. The tilt sensor is much smaller, making it easier to attach to my brace and doesn’t require a voltage divider making the wiring of the project much more simplistic.
+
 <!--
 ![](Tilt_sensor.JPG)
 --->
-<img src="Tilt_sensor.JPG" alt="tilt-sensor" width="500" class="center"/>
+<img src="Tilt_sensor.JPG" alt="tilt-sensor" width="700" class="center"/>
 
 **Figure 2. As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.
 Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutorial/**
@@ -65,6 +67,7 @@ The MIT app inventor allows for extensions similar to libraries that we download
 I spent much of my time understanding how my Notification extension worked. Because I spent a lot of time working on the MIT App inventor, I was able to quickly download and find the extension’s documentation. Notifications on my app can be sent through a simple “if” statement nested inside the if statement for reading the bytes from my Bluetooth Module. The block “callNotificationStyle1.HasNotificationsPermission” is used to test if the app has permission from the phone’s operating system (OS) to send notifications. If permission is allowed, I can call a notification that can go off even if the device is on other applications or in sleep mode. 
 
 I was also able to sow my flex sensor onto my back brace to prevent the flex sensor from falling. Since it was my first time sewing, I searched how to do a simple running stitch to connect patches of fabric to my back brace that would essentially act as a pocket for my flex sensor to slip into. 
+
 <!--
 ![](sewing.JPG)
 --->
@@ -76,6 +79,7 @@ One challenge I had with the project was finding the right notification extensio
 
 Many of my biggest challenges during my time at Bluestamp were the inconsistency of my hardware, my inexperience with software, and just general mistakes when soldering or wiring. There were many times when my flex sensor would either break from wear and tear or be extremely inconsistent by having its values increase over time or begin fluctuating from high to low. Unfortunately, because the flex sensor was so integral to my project, it was always a roadblock whenever I wanted to test my posture corrector. When I was working on my Arduino or the MIT app inventor I had many logic or runtime errors due to oversights in my code. There were also times when I needed replacements on materials like my Arduino and flex sensor, as I would make mistakes like shorting the Arduino when making a power line, or when burning my flex sensor when soldering. 
 I think my greatest triumph was when I was able to connect my Bluetooth Module to my Android as I struggled to connect them for almost an entire week and started to become pretty discouraged. So finally getting it to work was very satisfying and motivated me to keep going. 
+
 <!--
 ![Headstone Image](broken_flex_sensor.JPG)
 --->
@@ -111,7 +115,7 @@ I was able to specifically send out the individual Bytes by creating an object u
 <!--
 ![Headstone Image](Bluetooth_Diagram.jpg)
 --->
-<img src="Bluetooth_Diagram.jpg" alt="bluetooth_diagram" width="500" class="center"/>
+<img src="Bluetooth_Diagram.jpg" alt="bluetooth_diagram" width="700" class="center"/>
 
 **Figure 5. On my Arduino with an object created with the Software Serial class the .write method prints data to the TX pin of the Bluetooth Module, which travels through the wires from my pin 11 onto my Bluetooth module which is transmitted to my Android.**
 
