@@ -193,18 +193,18 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. --->
 # Code
 ```
-#include <Adafruit_NeoPixel.h>//Allows us to light up LED
-#include <SoftwareSerial.h>//Allows us to send data from the Bluetooth Module without using the Arduino's TX & RX pins
+#include <Adafruit_NeoPixel.h>                                        //Allows us to light up LED
+#include <SoftwareSerial.h>                                           //Allows us to send data from the Bluetooth Module without using the Arduino's TX & RX pins
 
-int flexpin = A0;//Where the Arduino receives flex sensor analog data
+int flexpin = A0;                                                     //Where the Arduino receives flex sensor analog data
 int value;
-#define LED_PIN    6 //pin#
-#define LED_COUNT 60 //# ofLEDs
-Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);// Use constructor to make a new object from NeoPixel lirary
-SoftwareSerial B(10,11);//You define the data pins in your parameters & Create an object from Software Serial 
-char Incoming_value = 0;
+#define LED_PIN    6                                                  //pin#
+#define LED_COUNT 60                                                  //# ofLEDs
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);    // Use constructor to make a new object from NeoPixel library
+SoftwareSerial B(10,11);                                              //You define the data pins in your parameters & Create an object from Software Serial 
+char Incoming_value = 0;                                              //Create variable for Incoming_value
 
-void setup() {//begin the created objects along with the serial monitor 
+void setup() {                                                        //begin the created objects along with the serial monitor 
   strip.begin();
   B.begin(9600);
   Serial.begin(9600);
@@ -213,7 +213,7 @@ void setup() {//begin the created objects along with the serial monitor
 
 void loop() {
 
-  if(Serial.available() > 0)
+  if(Serial.available() > 0)//Code to test if the Bluetooth Module is able to recieve signals from the Andoid phone
   {
     Incoming_value = Serial.read();
     Serial.print(Incoming_value);
@@ -226,31 +226,31 @@ void loop() {
   
   byte send = 1;
   int flexVal;
-  flexVal = analogRead(flexpin);//Converts the Voltage into a value that is displayed on Serial Monitor
+  flexVal = analogRead(flexpin);                            //Converts the Voltage into a value that is displayed on Serial Monitor
   Serial.print("Sensor: ");
   Serial.println(flexVal);
-  if (flexVal >= 16){//If the value exceeds a value collected by the A0 pin, the brace counts as slouching
-    strip.fill(111111110000000000000000,0, 100);//Turns lights on
-    Serial.println("Slouching");//prints out result in serial monitor 
+  if (flexVal >= 16){                                       //If the value exceeds a value collected by the A0 pin, the brace counts as slouching
+    strip.fill(111111110000000000000000,0, 100);            //Set lights to red color
+    Serial.println("Slouching");                            //prints out result in serial monitor 
     send = 1;
-    B.write(send);//sends byte from Bluetooth module to Ardroid phone 
-    B.flush();//clears input buffer
-    strip.show();//Lights shine
-    delay(500);
-    strip.fill(	0,0, 100);//Sets lights to nothing
-    strip.show();//Turns off the light
+    B.write(send);                                          //sends byte from Bluetooth module to Ardroid phone 
+    B.flush();                                              //clears input buffer
+    strip.show();                                           //Lights shine
+    delay(500);                                             //delay is added to create a flashing effect on the lights
+    strip.fill(	0,0, 100);                                  //Sets lights to no color
+    strip.show();                                           //Turns off the light
   }
-  else
+  else                                                      //Code if the user is not slouching
   {
-    strip.fill(	0,0, 100);
-    strip.show();//Turns off the light
+    strip.fill(	0,0, 100);                                  //Sets lights to no color
+    strip.show();                                           //Turns off the light
     send = 0;
     B.write(send);
     B.flush();
   }
    
   
-  delay(500);//repeat loop every half a second 
+  delay(500);                                              //repeat loop every half a second 
 }
 
 ```
