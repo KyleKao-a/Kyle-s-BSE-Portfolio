@@ -27,8 +27,10 @@ For my first set of modifications I have done 2 changes to my project. First I s
  Soldering my wires onto a protoshield provides 2 great benefits for me as the protoshield both acts as a way for me to semi-permanently attach wires to my arduino, and as a breadboard. This has allowed my project to be much more compact and makes organization much easier. 
  
 Most importantly, I was able to find a consistent way to determine a user’s posture by replacing my flex sensor with a tilt sensor. The flex sensor gave me a lot of issues throughout the entire process of making my posture corrector. First, it was rather difficult to implement onto my back brace as I had to tie down both ends of the sensor and it would often have trouble sticking onto the back brace.
-
+<!--
 ![](protoshield.jpeg)
+-->
+<img src="protoshield.jpeg" alt="protoshield" width="600" class="center"/>
 
 **Figure 1. The protoshield not only is a great way to make sure your wires stay connected onto the Arduino, the shield is also able to act as a breadboard saving space. The protoshield is also able to easily be taken on and off the Arduino allowing you to easily use the same Arduino for other projects.**
 
