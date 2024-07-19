@@ -37,8 +37,10 @@ Most importantly, I was able to find a consistent way to determine a user’s po
 Second, the flex sensor would break very often, requiring me to get replacements. When I tested my posture corrector every day to try and achieve consistency, not only would it mold the plastic of the flex sensor, it would cause parts of the sensor to break off. Third, its values were very inconsistent. In the beginning, I originally used a voltage divider to have my Arduino return the resistance values of the flex sensor as voltage. However this not only made the wiring of the project very complicated, it was very inconsistent. The inconsistency made tuning my flex sensor code a massive pain. One day the values on my serial monitor would work fine, another day I would spend half an hour praying that the values don’t jump from the tens to the hundreds on a whim.
 
 My solution was to use a tilt sensor which solved many of the flex sensor’s shortcomings. Instead of testing how the back bends, the tilt sensor instead uses the Earth’s gravity to identify if the user’s back is property straight or not. Within the tilt sensors’ metal case contains a ball, along with 2 pins at the base of the case. When the ball is at the base of the sensor an electrical current is able to flow to both pins, however if the sensor were to be tilted in which the ball falls from the base, the connection is then broken. The sensor is able to interpret this change as a high and a low. Rather than a range of values with the flex sensor, the tilt sensor only sends binary values which allows the sensor to be much more consistent. Furthermore both wiring and attatching the tilt sensor was much easier than the flex sensor. The tilt sensor is much smaller, making it easier to attach to my brace and doesn’t require a voltage divider making the wiring of the project much more simplistic.
-
+<!--
 ![](Tilt_sensor.JPG)
+--->
+<img src="Tilt_sensor.JPG" alt="tilt-sensor" width="400" class="center"/>
 
 **Figure 2. As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.
 Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutorial/**
