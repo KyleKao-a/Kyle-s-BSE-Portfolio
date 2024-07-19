@@ -69,6 +69,7 @@ I was also able to sow my flex sensor onto my back brace to prevent the flex sen
 ![](sewing.JPG)
 --->
 <img src="sewing.JPG" alt="sewing" width="500" class="center"/>
+
 **Figure 3. The orange string that lines the cloth is an example of a running stitch, a basic light stitch that allows for the fabric to stick to my back brace.**
 
 One challenge I had with the project was finding the right notification extension. Initially, when I started working on my notifications I downloaded an extension that wasn’t very compatible with the newer versions of MIT App Inventor. This left me very confused because despite following the extension’s documentation, the app wouldn’t send out a notification. I eventually switched to a more recently updated extension, along with allowing notification permissions on my app, which resolved this issue. Another challenge I had was with sowing on my back brace. I had never seen it before, so it was hard to get started. With my shaky hands, I was unable to make very precise stitches which led to a functional, but not appealing, design. 
@@ -79,6 +80,7 @@ I think my greatest triumph was when I was able to connect my Bluetooth Module t
 ![Headstone Image](broken_flex_sensor.JPG)
 --->
 <img src="broken_flex_sensor.JPG" alt="broke_flex" width="500" class="center"/>
+
 **Figure 4. Because my flex sensor is naturally bent when the user has a straight back, to test the Bluetooth Module, I had to bend the flex sensor very often which caused the base of the flex sensor to become loose due to wear and tear. This lead to inconsistency with the flex sensor's values.**
 
 I believe I learned a lot about both software and hardware during my time and Bluestamp. I learned techniques on soldering, what a voltage divider was, and how to properly wire Arduino.My time at Bluestamp has opened my eyes to the possible paths 
@@ -110,6 +112,7 @@ I was able to specifically send out the individual Bytes by creating an object u
 ![Headstone Image](Bluetooth_Diagram.jpg)
 --->
 <img src="Bluetooth_Diagram.jpg" alt="bluetooth_diagram" width="500" class="center"/>
+
 **Figure 5. On my Arduino with an object created with the Software Serial class the .write method prints data to the TX pin of the Bluetooth Module, which travels through the wires from my pin 11 onto my Bluetooth module which is transmitted to my Android.**
 
 Now that my Arduino was able to send data to my phone, I needed to create an app to read the data and display if the user was slouching or not. For this I used MIT App Inventor. The MIT app inventor uses block-style coding which I was very unfamiliar with, so it took me a very long time to understand what I was doing. I was able to establish a Bluetooth connection with the module by creating a list picker element which, when clicked, would show the address and names of available connections.
