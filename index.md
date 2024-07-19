@@ -30,7 +30,7 @@ Most importantly, I was able to find a consistent way to determine a user’s po
 <!--
 ![](protoshield.jpeg)
 -->
-<img src="protoshield.jpeg" alt="protoshield" width="600" class="center"/>
+<img src="protoshield.jpeg" alt="protoshield" width="500" class="center"/>
 
 **Figure 1. The protoshield not only is a great way to make sure your wires stay connected onto the Arduino, the shield is also able to act as a breadboard saving space. The protoshield is also able to easily be taken on and off the Arduino allowing you to easily use the same Arduino for other projects.**
 
