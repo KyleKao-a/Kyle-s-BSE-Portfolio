@@ -40,7 +40,7 @@ My solution was to use a tilt sensor which solved many of the flex sensor’s sh
 <!--
 ![](Tilt_sensor.JPG)
 --->
-<img src="Tilt_sensor.JPG" alt="tilt-sensor" width="400" class="center"/>
+<img src="Tilt_sensor.JPG" alt="tilt-sensor" width="500" class="center"/>
 
 **Figure 2. As shown in the diagram, as the ball is on the base of the sensor, the pins are able to be connected as eletricity is conducted from the ball. However as gravity causes the ball to fall away from the base the connection is broken.
 Image from https://lastminuteengineers.com/ball-tilt-switch-sensor-arduino-tutorial/**
